@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="asset/css/custom.css" />
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+  <!--fontawesome-->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+    integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+    crossorigin="anonymous"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <!--This is used for search icon. Instead putting icon manually it is loaded from fontawesome-->
+  <title>Testd</title>
+</head>
+
+<body>
+  <div class="header">
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-md navbar-light bg-dark bg-transparent ">
+
+      <a href="./" class="navbar-brand"><img src="asset/image/logo.png"
+          onerror="this.onerror=null; this.src='image.png'"></a>
+
+      <button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav">
+
+        <span class="navbar-toggler-icon"></span>
+
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-between" id="nav">
+
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a class="nav-link text-light font-weight-bold px-3" href="#">HOME</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light font-weight-bold px-3" href="use_case.html">USE CASES</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light font-weight-bold px-3" href="#">HOW IT WORKS</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light font-weight-bold px-3" href="#">OUR STORY</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light font-weight-bold px-3" href="#" data-toggle="modal"
+              data-target="#myModal">CONNECT WITH US</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link text-light font-weight-bold px-3" href="#">FAQS</a>
+          </li>
+
+        </ul>
+
+
+        <!-- Search bar -->
+
+        <!-- <form class="form-inline ml-3">
+
+          <div class="input-group">
+
+            <input type="text" class="form-control " placeholder="Search">
+
+            <button type="submit"><i class="fa fa-search"></i></button>
+
+          </div>
+
+        </form> -->
+
+      </div>
+
+    </nav>
+
+    <div class="header-text">
+      <p class="title">Getting Safely <br /> Back to Work</p>
+      <p class="description">TESTD™ is a COVID-19 I.D. that stores <br />antibody status on a blockchain.</p>
+      <div class="more">
+        <a href="#">LEARN MORE</a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <p class="sub_header">
+      The first blockchain system for COVID-19 testing.<br>
+      Protects privacy, creates confidence.
+    </p>
+    <div class="list-4">
+      <div class="item">
+        <div class="image">
+          <img src="asset/image/hippa.png">
+        </div>
+        <p class="title">100% HIPPA Compliant</p>
+        <p class="desc">
+          Keeps COVID-19 status <br class="desktop">
+          separate from sensitive, <br class="desktop">
+          private medical details
+        </p>
+      </div>
+      <div class="item">
+        <div class="image">
+          <img src="asset/image/secure.png">
+        </div>
+        <p class="title">Secure Test Reporting</p>
+        <p class="desc">
+          Results can’t be forged<br class="desktop">
+          or stolen, and are<br class="desktop">
+          displayed when needed
+        </p>
+      </div>
+      <div class="item">
+        <div class="image">
+          <img src="asset/image/Verification.png">
+        </div>
+        <p class="title">Total Identity Verification</p>
+        <p class="desc">
+          Tests are locked to a user’s<br class="desktop">
+          Face ID or Touch ID for confidence<br class="desktop">
+          in the user’s identity
+        </p>
+      </div>
+      <div class="item">
+        <div class="image">
+          <img src="asset/image/Trust.png">
+        </div>
+        <p class="title">Complete Trust System</p>
+        <p class="desc">
+          The TESTD app and corporate<br class="desktop">
+          dashboard show who’s ill<br class="desktop">
+          and who’s safe
+        </p>
+      </div>
+    </div>
+
+  </div>
+  <div class="section_video">
+    <div class="green-bar"></div>
+    <div class="nav-bar">
+      <a href="#"> <img src="asset/image/chevrons_left.png" /></a>
+      <a href="#"> <img src="asset/image/chevrons_right.png" /></a>
+    </div>
+    <div class="container">
+      <p class="sub_header">
+        Welcome to TESTD
+      </p>
+      <img src="asset/image/video-1.png" />
+    </div>
+
+  </div>
+
+  <div class="container">
+    <!-- Read our reviews  -->
+    <p class="sub_header">
+      Read our reviews
+    </p>
+    <div class="list-4">
+      <div class="item-no-border">
+        <span class="copy">“</span>
+        <p class="title">
+          “Test at home and STILL get<br class="desktop">
+          medical verification.<br class="desktop">
+          Ingenious!”</p>
+        <p class="desc">
+          Nic’s Cousin<br class="desktop">
+          Medical Director
+        </p>
+        <p class="bottom">Doctors on Demand</p>
+      </div>
+      <div class="item-no-border">
+        <span class="copy">“</span>
+        <p class="title">“When my whole staff and patients<br class="desktop">
+          get TESTD, that’s how I’ll know<br class="desktop">
+          my dental practice is safe.” </p>
+        <p class="desc">
+          Ty<br class="desktop">
+          Dentist
+        </p>
+        <p class="bottom">Dentist Office</p>
+      </div>
+      <div class="item-no-border">
+        <span class="copy">“</span>
+        <p class="title">“I need this. I want this! I own a bar, not a<br class="desktop">
+          clinic. My customers can show a current <br class="desktop">
+          test and come right in, no temperature <br class="desktop">
+          checks, no interrogations.”</p>
+        <p class="desc">
+          McKay
+          Owner
+        </p>
+        <p class="bottom">Brewery</p>
+      </div>
+      <div class="item-no-border">
+        <span class="copy">“</span>
+        <p class="title">
+          “I can show the same test at every <br class="desktop">
+          delivery, all day. And later at the<br class="desktop">
+          gym. So convenient!”
+        </p>
+        <p class="desc">
+          DeliveryGuy
+          Delivery Guy
+        </p>
+        <p class="bottom">Amazon</p>
+      </div>
+    </div>
+    <div class="line-divider"></div>
+    <p class="sub_header">
+      TESTD™ is an ideal tool for the distributed workforce
+    </p>
+    <div class="list-5">
+      <div class="item">
+        <div class="image">
+          <img src="asset/image/Healthcare_insurance_icon.png">
+        </div>
+        <p class="title">
+          Insurance<br class="desktop">
+          Companies</p>
+      </div>
+      <div class="item">
+        <div class="image">
+          <img src="asset/image/ride_share_icon.png">
+        </div>
+        <p class="title">
+          Rideshare<br class="desktop">
+          Companies</p>
+      </div>
+      <div class="item">
+        <div class="image">
+          <img src="asset/image/scooter_icon.png">
+        </div>
+        <p class="title">
+          Delivery<br class="desktop">
+          Services</p>
+      </div>
+      <div class="item">
+        <div class="image">
+          <img src="asset/image/staffing_icon.png">
+        </div>
+        <p class="title">
+          Staffing<br class="desktop">
+          Companies</p>
+      </div>
+      <div class="item">
+        <div class="image">
+          <img src="asset/image/dating_icon.svg">
+        </div>
+        <p class="title">
+          Online<br class="desktop">
+          Dating Services</p>
+      </div>
+    </div>
+    <div class="sub_header2">
+      … and any company or organization that wants to provide a safe
+      workplace, comply with regulations and insurance needs, and
+      eliminate concerns about you and your teammates
+      coming into contact with each other.
+      <div class="button">
+        <a href="#" class="main">LEARN MORE</a>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+  <footer>
+    <div class="subscribe">
+      <div class="desc">Get the latest TESTD news to your inbox</div>
+      <div class="emailForm">
+        <input type="email" id="subscribe_email" placeholder="Enter your email address" />
+      </div>
+      <div class="btn_subscribe">
+        <a href="#" class=" main">SUBSCRIBE</a>
+      </div>
+    </div>
+    <div class="container">
+      <img src="asset/image/Logo_footer.png" class="footer_logo" />
+      <div class="row">
+        <div class="col-md-9">
+          <div class="row content">
+            <div class="col-md-3">
+              <ul>
+                <li><a href="#">23 NW 5th St</a></li>
+                <li><a href="#">Fort Lauderdale, FL 33301</a></li>
+                <li><a href="#">info@testd.com</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Use cases</a></li>
+                <li><a href="#">How it works</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li><a href="#">Our story</a></li>
+                <li><a href="#">Connect with us</a></li>
+                <li><a href="#">FAQs</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li class="social"><a href="#">
+                    <div class="label">Facebook</div> <img src="asset/image/facebook_white.svg">
+                  </a></li>
+                <li class="social"><a href="#">
+                    <div class="label">Linked In</div><img src="asset/image/linkedIn_white.svg">
+                  </a></li>
+                <li class="social">
+                  <a href="#">
+                    <div class="label">Twitter</div> <img src="asset/image/twitter_white.svg">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <hr class="divider" />
+          </div>
+        </div>
+        <div class="col-md-3 right_logo">
+          <p>Getting safely<br class="desktop">
+            back to work</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <div>
+          © 2020 Testd, Inc. All Rights Reserved.
+        </div>
+        <div>
+          Privacy Policy
+        </div>
+        <div>
+          Terms & Conditions
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Contact Us</h4>
+        <button type="button" class="close" data-dismiss="modal">×</button>
+      </div>
+      <div class="modal-body">
+
+        <form role="form" method="post" id="reused_form">
+          <p>
+            Send your message in the form below and we will get back to you as early as possible.
+          </p>
+
+          <div class="form-group">
+            <label for="name">
+              Name:</label>
+            <input type="text" class="form-control" id="name" name="name" required maxlength="50">
+
+          </div>
+          <div class="form-group">
+            <label for="email">
+              Email:</label>
+            <input type="email" class="form-control" id="email" name="email" required maxlength="50">
+          </div>
+          <div class="form-group">
+            <label for="name">
+              Message:</label>
+            <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Your Message Here"
+              maxlength="6000" rows="7"></textarea>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" name="terms" required> I accept the <u>Terms and Conditions</u></p>
+          </div>
+          <div class="g-recaptcha" data-sitekey="6LdFNNcUAAAAAGKsWDe9Xs2Fj_d29ywe2ae4nIsF"></div>
+
+          <button type="submit" class="btn btn-lg btn-success btn-block" id="btnContactUs">Send Message →</button>
+
+        </form>
+        <div id="success_message" style="width:100%; height:100%; display:none; ">
+          <h3>Sent your message successfully!</h3>
+        </div>
+        <div id="error_message" style="width:100%; height:100%; display:none; ">
+          <h3>Error</h3>
+          Sorry there was an error sending your form.
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+<script type="text/javascript">
+  var onloadCallback = function () {
+    alert("grecaptcha is ready!");
+  };
+</script>
+
+</html>
