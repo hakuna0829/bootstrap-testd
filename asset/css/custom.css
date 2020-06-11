@@ -1044,16 +1044,16 @@
   }
 
   .header .header-text {
-    width: 270px;
+    width: 300px;
     position: absolute;
     left: 320px;
-    top: 178px;
+    top: 190px;
   }
 
   .header .header-text .title,
   .header2 .header-text .title {
     font-family: "Montserrat";
-    font-size: 35px;
+    font-size: 40px;
     font-weight: bold;
     letter-spacing: 0;
     line-height: 40px;
@@ -1066,7 +1066,7 @@
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 0;
-    line-height: 22px;
+    line-height: 24px;
   }
 
   .header .header-text a,
@@ -1177,6 +1177,10 @@
   .sub_header2 .button {
     text-align: center;
     margin: 40px;
+  }
+
+  #firstname {
+    text-align: center;
   }
   .divider_short {
     box-sizing: border-box;
@@ -1468,11 +1472,11 @@
   footer .subscribe .desc {
     color: #fff;
     font-family: Montserrat;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 600;
     letter-spacing: 0;
     margin: 0 auto;
-    padding: 15px 0px 0px;
+    padding: 8px 0px 0px;
   }
 
   footer .subscribe .emailForm {
@@ -1662,7 +1666,9 @@
     border: 1px solid #ffffff;
     background-color: #3ecccd;
   }
-
+  .num_card .num_pad:hover {
+    background-color: #fdca21;
+  }
   .num_card .num_pad p {
     color: #ffffff;
     font-family: ".SF NS Display";
@@ -1770,6 +1776,9 @@
     background: transparent; */
   }
 
+  .owl-carousel .test_item {
+    position: relative;
+  }
   .owl-carousel .test_item .image {
     text-align: center;
     width: 270px;
@@ -1778,6 +1787,18 @@
     margin: 0 auto;
   }
 
+  .owl-carousel .test_item .image span {
+    position: absolute;
+    bottom: 20px;
+    left: -15px;
+    padding: 0px 20px;
+    border-radius: 50%;
+    background: #fdca21;
+    font-family: "Monserrat";
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+  }
   .owl-nav button {
     cursor: pointer;
   }
@@ -2220,5 +2241,116 @@
     font-size: 18.72px;
     letter-spacing: 0;
     line-height: 28px;
+  }
+  /* test css */
+  .header1 {
+    width: 100%;
+    background: #2e3192;
+    text-align: center;
+  }
+
+  .header1 .title {
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-size: 48px;
+    color: #fff;
+    padding: 77px 0 73px;
+  }
+
+  .header1 .button_group {
+    width: 775px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    padding-bottom: 100px;
+  }
+
+  .header1 .button_group .item div {
+    width: 196px;
+    padding: 20px;
+    background: #f1f1f1;
+  }
+  .sub_header_ {
+    color: #2e3192;
+    font-family: "DM Sans";
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 42px;
+    margin: 30px 0;
+  }
+
+  #faq_accordion1 {
+    width: 912px;
+    margin: 100px auto;
+  }
+  #faq_accordion1 .card {
+    border: 0px;
+    border-bottom: solid 1px #e1e1e1;
+    border-radius: 0px;
+  }
+
+  #faq_accordion1 .card .card-header {
+    border: 0px;
+  }
+
+  #faq_accordion1 .card-header .btn-link {
+    color: #333333;
+    font-family: "DM Sans";
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-decoration: none;
+  }
+  #faq_accordion1 .card-header h2,
+  #faq_accordion1 .card-header .mb-0 {
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+  }
+  #faq_accordion1 .circle.plus {
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-left: 10px solid #0f84a9;
+  }
+
+  #faq_accordion1 .circle.minus {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid #0f84a9;
+  }
+
+  #faq_accordion1 .card-body {
+    color: #333333;
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 28px;
+  }
+
+  .footer1 {
+    width: 100%;
+    background: #fff;
+    text-align: center;
+  }
+
+  .footer1 .button_group {
+    width: 775px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    padding-bottom: 100px;
+  }
+
+  .footer1 .button_group .item {
+    background: #f1f1f1;
+    padding: 20px;
   }
 }
