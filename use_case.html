@@ -332,6 +332,12 @@
   var onloadCallback = function () {
     alert("grecaptcha is ready!");
   };
+  $('.num_card').hover(function () {
+    $(this).find('.num_pad').addClass('bg_yellow');
+  }, function () {
+      
+      $(this).find('.num_pad').removeClass('bg_yellow');
+  });
 </script>
 
 </html>
