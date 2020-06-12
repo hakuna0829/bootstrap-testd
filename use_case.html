@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -15,19 +16,14 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-  <link rel="stylesheet" href="asset/css/custom.css" />
 
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-    crossorigin="anonymous"></script>
-
-  <!--fontawesome-->
-  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
-    integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
-    crossorigin="anonymous"></script>
-  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <!-- owl carousel css-->
+  <link rel="stylesheet" href="asset/libs/owlcarousel/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="asset/libs/owlcarousel/css/owl.theme.default.min.css">
   <!--This is used for search icon. Instead putting icon manually it is loaded from fontawesome-->
-  
+  <link rel="stylesheet" href="asset/css/custom.css" />
+  <!--This is used for search icon. Instead putting icon manually it is loaded from fontawesome-->
+
 </head>
 
 <body>
@@ -35,7 +31,8 @@
     <!-- navbar -->
 
     <nav class="navbar navbar-expand-md navbar-light bg-dark bg-transparent ">
-      <a href="./" class="navbar-brand"><img src="asset/image/logo.png" onerror="this.onerror=null; this.src='image.png'"></a>
+      <a href="./" class="navbar-brand"><img src="asset/image/logo.png"
+          onerror="this.onerror=null; this.src='image.png'"></a>
       <button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -77,21 +74,22 @@
     </nav>
 
     <div class="header-text">
-      What can TESTD™ do for you?
+      What can TESTD™ <br class="mobile">do for you?
     </div>
   </div>
   <div class="container">
-    <div class="list-6">
+    <!-- <div class="list-6"> -->
+    <div class="owl-carousel owl-theme list-6" id="blochchain_owl">
       <div class="item">
         <div class="image">
           <img src="asset/image/scooter_icon_right.png">
         </div>
         <p class="title">Gig work</p>
         <p class="desc">
-            Ride share<br class="desktop">
-            Delivery Service<br class="desktop">
-            In-Home Services<br class="desktop">
-            Staffing Agencies
+          Ride share<br class="desktop">
+          Delivery Service<br class="desktop">
+          In-Home Services<br class="desktop">
+          Staffing Agencies
         </p>
       </div>
       <div class="item">
@@ -100,10 +98,10 @@
         </div>
         <p class="title">Healthcare</p>
         <p class="desc">
-            Clinics<br class="desktop">
-            Doctors<br class="desktop">
-            Dentists<br class="desktop">
-            Hospitals
+          Clinics<br class="desktop">
+          Doctors<br class="desktop">
+          Dentists<br class="desktop">
+          Hospitals
         </p>
       </div>
       <div class="item">
@@ -112,10 +110,10 @@
         </div>
         <p class="title">Retail</p>
         <p class="desc">
-            Stores<br class="desktop">
-            Restaurants<br class="desktop">
-            Movie Theaters<br class="desktop">
-            Salons/Barbershops
+          Stores<br class="desktop">
+          Restaurants<br class="desktop">
+          Movie Theaters<br class="desktop">
+          Salons/Barbershops
         </p>
       </div>
       <div class="item">
@@ -124,10 +122,10 @@
         </div>
         <p class="title">Travel</p>
         <p class="desc">
-            Cruises<br class="desktop">
-            Hotels<br class="desktop">
-            Airlines<br class="desktop">
-            Public Transit
+          Cruises<br class="desktop">
+          Hotels<br class="desktop">
+          Airlines<br class="desktop">
+          Public Transit
         </p>
       </div>
       <div class="item">
@@ -136,10 +134,10 @@
         </div>
         <p class="title">Events</p>
         <p class="desc">
-            Sports<br class="desktop">
-            Concerts<br class="desktop">
-            Festivals<br class="desktop">
-            Conferences
+          Sports<br class="desktop">
+          Concerts<br class="desktop">
+          Festivals<br class="desktop">
+          Conferences
         </p>
       </div>
       <div class="item">
@@ -148,10 +146,10 @@
         </div>
         <p class="title">Education</p>
         <p class="desc">
-            Day Care<br class="desktop">
-            Universities<br class="desktop">
-            Public Schools<br class="desktop">
-            Private Schools
+          Day Care<br class="desktop">
+          Universities<br class="desktop">
+          Public Schools<br class="desktop">
+          Private Schools
         </p>
       </div>
     </div>
@@ -162,9 +160,11 @@
     <div class="num_card">
       <p>Delivery Drivers</p>
       <div class="desc">
-       Whether it’s a hot cheeseburger from your favorite restaurant, fresh veggies from the local market or a new pair of
-       shoes from your favorite brand, America’s delivery drivers keep our economy moving. Ensuring they are free of COVID-19 
-       gives your customers an outstanding customer experience and heps stop the spread of the disease.
+        Whether it’s a hot cheeseburger from your favorite restaurant, fresh veggies from the local market or a new
+        pair of
+        shoes from your favorite brand, America’s delivery drivers keep our economy moving. Ensuring they are free of
+        COVID-19
+        gives your customers an outstanding customer experience and heps stop the spread of the disease.
       </div>
       <div class="num_pad">
         <p>1</p>
@@ -177,7 +177,10 @@
     <div class="num_card right_">
       <p>Nurses</p>
       <div class="desc">
-       Nurses serve on the frontlines of the American healthcare system. As providers of in-home care and at clinics and hospitals, they are also on the frontline of the COVID-19 pandemic. Many hospitals are already providing regular testing for their staff, and TESTD is the perfect solution to help protect the safety of nurses, their families, and their patients
+        Nurses serve on the frontlines of the American healthcare system. As providers of in-home care and at clinics
+        and hospitals, they are also on the frontline of the COVID-19 pandemic. Many hospitals are already providing
+        regular testing for their staff, and TESTD is the perfect solution to help protect the safety of nurses, their
+        families, and their patients
       </div>
       <div class="num_pad">
         <p>2</p>
@@ -190,8 +193,10 @@
     <div class="num_card align_clear">
       <p>Restaurants</p>
       <div class="desc">
-       The restaurant industry is one of the largest employers in the country, and dining out is usually akey part of any night out on the town. Getting our nation safely back to 
-       work means getting our restaurants back to full capacity. With TESTD, you can have confidence that your chefs, servers, and customers are all protected.
+        The restaurant industry is one of the largest employers in the country, and dining out is usually akey part of
+        any night out on the town. Getting our nation safely back to
+        work means getting our restaurants back to full capacity. With TESTD, you can have confidence that your chefs,
+        servers, and customers are all protected.
       </div>
       <div class="num_pad">
         <p>3</p>
@@ -204,8 +209,11 @@
     <div class="num_card right_">
       <p>Travel</p>
       <div class="desc">
-       From airlines and cruise lines to hotels and vacation rental services, the COVID-19 pandemic has been devastating. 
-       Until travelers feel safe to take vacations and business trips, planes will remain grounded and cruise ships will stay anchored. With TESTD, you can give your employees and customers the confidence they need to get out and safely see the world.
+        From airlines and cruise lines to hotels and vacation rental services, the COVID-19 pandemic has been
+        devastating.
+        Until travelers feel safe to take vacations and business trips, planes will remain grounded and cruise ships
+        will stay anchored. With TESTD, you can give your employees and customers the confidence they need to get out
+        and safely see the world.
       </div>
       <div class="num_pad">
         <p>4</p>
@@ -218,8 +226,10 @@
     <div class="num_card align_clear">
       <p>Sporting Events</p>
       <div class="desc">
-       As a sports leagues get ready to re-start without fans in the stadium, we’ll miss the roar of the crowds if its TV only viewing. 
-       Fans already line up to pass through metal detectors at arenas, and with one extra safety check of a TESTD ID, we’ll soon be filling our stadiums to cheer on our favorite teams.
+        As a sports leagues get ready to re-start without fans in the stadium, we’ll miss the roar of the crowds if
+        its TV only viewing.
+        Fans already line up to pass through metal detectors at arenas, and with one extra safety check of a TESTD ID,
+        we’ll soon be filling our stadiums to cheer on our favorite teams.
       </div>
       <div class="num_pad">
         <p>5</p>
@@ -232,10 +242,12 @@
     <div class="num_card right_">
       <p>Education</p>
       <div class="desc">
-       Teachers and educators represent the single largest group of employees in America. 
-       While online classes have been able to keep some students engaged, nothing can replace the in-person classroom experience.
-        Many college campuses face financial ruin as students choose to stay home and wait it out or do online school, rather than pay for room and board. With TESTD,
-         you can safely and quickly get your campuses re-opened while protecting your students, teachers, and staff.
+        Teachers and educators represent the single largest group of employees in America.
+        While online classes have been able to keep some students engaged, nothing can replace the in-person classroom
+        experience.
+        Many college campuses face financial ruin as students choose to stay home and wait it out or do online school,
+        rather than pay for room and board. With TESTD,
+        you can safely and quickly get your campuses re-opened while protecting your students, teachers, and staff.
       </div>
       <div class="num_pad">
         <p>6</p>
@@ -244,9 +256,9 @@
         <img src="asset/image/top_right_corner.svg" />
       </div>
     </div>
-    
+
   </div>
-  
+
 
   <div class="container align_clear">
     <!-- Read our reviews  -->
@@ -327,17 +339,53 @@
     </div>
   </footer>
 </body>
-
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+  integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<!--fontawesome-->
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+  integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<!-- owl carousel script -->
+<script src="asset/libs/owlcarousel/owl.carousel.min.js"></script>
 <script type="text/javascript">
   var onloadCallback = function () {
     alert("grecaptcha is ready!");
   };
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+    lazyLoad: true,
+    nav: true,
+    navText: ["<img class='prev' src='asset/image/chevrons_left_yellow.png'>", "<img src='asset/image/chevrons_right_yellow.png' class='next'>"],
+    responsive: {
+      0: {
+        items: 2,
+        nav: true
+      },
+      600: {
+        items: 3,
+        nav: false
+      },
+      1000: {
+        items: 3,
+        nav: true,
+        loop: true,
+      },
+      1900: {
+        items: 6,
+        nav: false,
+        loop: false,
+      }
+    }
+  })
+  $('.owl-dots').css('display', 'none');
   $('.num_card').hover(function () {
     $(this).find('.num_pad').addClass('bg_yellow');
   }, function () {
-      
-      $(this).find('.num_pad').removeClass('bg_yellow');
+    $(this).find('.num_pad').removeClass('bg_yellow');
   });
+
 </script>
 
 </html>

@@ -180,14 +180,14 @@ a.main_btn:hover {
     margin: 0 auto;
   }
 
-  .owl-carousel .owl-item {
+  .list-4 .owl-item {
     /* border-right: solid 1px #cecece; */
   }
 
-  .owl-carousel .owl-item:last-child {
+  .list-4 .owl-item:last-child {
     border-right: 0px;
   }
-  .owl-carousel .item {
+  .list-4 .item {
     text-align: center;
     /* width: 105px; */
     width: 160px;
@@ -196,7 +196,15 @@ a.main_btn:hover {
   .list-6 {
     display: flex;
     justify-content: space-between;
-    margin: 0px auto 40px;
+    margin: 10px auto 10px;
+  }
+
+  .list-6 .owl-item {
+    /* border-right: solid 1px #cecece; */
+  }
+
+  .list-6 .owl-item:nth-child(odd) {
+    border-right: none;
   }
 
   .list-5 .item {
@@ -257,12 +265,12 @@ a.main_btn:hover {
     margin: 10px auto 20px;
   }
 
-  .owl-carousel .item:last-child,
+  .list-4 .item:last-child,
   .list-6 .item:last-child {
     border-right: 0px;
   }
 
-  .owl-carousel .item .image,
+  .list-4 .item .image,
   .list-6 .item .image {
     text-align: center;
     width: 100%;
@@ -270,7 +278,7 @@ a.main_btn:hover {
     position: relative;
   }
 
-  .owl-carousel img,
+  .list-4 img,
   .list-6 img {
     width: initial !important;
     max-height: 100%;
@@ -283,7 +291,7 @@ a.main_btn:hover {
     margin: auto;
   }
 
-  .owl-carousel .item .title {
+  .list-4 .item .title {
     /* height: 30px; */
     /* width: 107px; */
     width: 160px;
@@ -297,7 +305,7 @@ a.main_btn:hover {
     margin: 0 auto 5px;
   }
 
-  .owl-carousel .item .desc {
+  .list-4 .item .desc {
     /* height: 45px; */
     width: 100px;
     color: #788081;
@@ -309,7 +317,7 @@ a.main_btn:hover {
     margin: 0 auto;
   }
 
-  .owl-carousel .owl-prev {
+  .list-4 .owl-prev {
     position: absolute;
     top: 40%;
     left: 0;
@@ -317,7 +325,7 @@ a.main_btn:hover {
     height: 14px;
   }
 
-  .owl-carousel .owl-next {
+  .list-4 .owl-next {
     position: absolute;
     top: 40%;
     right: 0;
@@ -325,32 +333,45 @@ a.main_btn:hover {
     height: 14px;
   }
 
+  .list-6 .owl-prev {
+    position: absolute;
+    top: 40%;
+    left: -10px;
+    width: 28px;
+    height: 14px;
+  }
+
+  .list-6 .owl-next {
+    position: absolute;
+    top: 40%;
+    right: -10px;
+    width: 28px;
+    height: 14px;
+  }
+
   .list-6 .item .title {
-    height: 40px;
-    width: 159px;
     margin: 8px auto 10px;
     color: #0f84a9;
     font-family: Montserrat;
-    font-size: 24px;
+    font-size: 13.72px;
     font-weight: 600;
     letter-spacing: 0;
-    line-height: 40px;
+    line-height: 28.8px;
     text-align: center;
   }
 
   .list-6 .item .desc {
-    width: 170px;
+    width: 105px;
     color: #788081;
     font-family: Montserrat;
-    font-size: 18.72px;
-    font-weight: 500;
+    font-size: 10.28px;
     letter-spacing: 0;
-    line-height: 30px;
+    line-height: 15px;
     text-align: center;
     margin: 0 auto;
   }
 
-  .owl-carousel .copy,
+  .list-4 .copy,
   .list-6 .copy {
     /* height: 50px; */
     width: 42px;
@@ -363,13 +384,13 @@ a.main_btn:hover {
     text-align: center;
   }
 
-  .owl-carousel .item-no-border,
+  .list-4 .item-no-border,
   .list-6 .item-no-border {
     text-align: center;
     width: 410px;
   }
 
-  .owl-carousel .bottom {
+  .list-4 .bottom {
     height: initial;
     /* width: 220px; */
     color: #0f84a9;
@@ -992,6 +1013,100 @@ a.main_btn:hover {
     font-weight: 600;
     color: white;
     margin: 10px 0 10px;
+  }
+
+  /* use_case.html */
+  .header2 {
+    height: 86px;
+  }
+
+  .header2 .header-text {
+    margin: 22px auto 0px;
+    text-align: center;
+    color: #043b5d;
+    font-family: Montserrat;
+    font-size: 10.72px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 13px;
+  }
+
+  .sub_header_left {
+    color: #0f84a9;
+    font-family: Montserrat;
+    font-size: 13.72px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 40px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .num_card {
+    width: calc(100% - 10px);
+    border: solid 2px #3ecccd;
+    border-right-width: 15px;
+    position: relative;
+    margin-left: 10px;
+    margin-bottom: 30px;
+  }
+
+  .num_card.right_ {
+    float: inherit;
+  }
+
+  .num_card p {
+    color: #0f84a9;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 28px;
+    margin: 5px 0 0px 20px;
+  }
+
+  .num_card .desc {
+    margin: 0px 20px 10px;
+    transform: rotate(360deg);
+    color: #0f84a9;
+    font-family: Montserrat;
+    font-size: 8px;
+    letter-spacing: 0;
+    line-height: 10px;
+  }
+
+  .num_card .num_pad {
+    position: absolute;
+    top: 33%;
+    left: -20px;
+    box-sizing: border-box;
+    height: 31px;
+    width: 31px;
+    border: 1px solid #ffffff;
+    background-color: #3ecccd;
+  }
+  .num_card .num_pad:hover {
+    background-color: #fdca21;
+  }
+  .num_card .num_pad p {
+    font-family: Univers;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 20px;
+    text-align: center;
+    margin: 4px 0 0;
+  }
+
+  .num_card .top_right_corner {
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    height: 24px;
+    width: 27px;
+  }
+
+  .num_card .top_right_corner img {
+    width: 100%;
   }
 }
 
@@ -1811,7 +1926,7 @@ a.main_btn:hover {
 
   .list-4 img,
   .list-6 img {
-    /* width: 82px; */
+    width: 82px !important;
     max-height: 100%;
     max-width: 100%;
     position: absolute;
@@ -1823,7 +1938,7 @@ a.main_btn:hover {
   }
 
   .list-4 .item .title {
-    height: 40px;
+    /* height: 40px; */
     width: 308px;
     color: #0f84a9;
     font-family: Montserrat;
@@ -1836,7 +1951,7 @@ a.main_btn:hover {
   }
 
   .list-4 .item .desc {
-    height: 84px;
+    /* height: 84px; */
     width: 330px;
     color: #788081;
     font-family: Montserrat;
@@ -1848,7 +1963,7 @@ a.main_btn:hover {
   }
 
   .list-6 .item .title {
-    height: 40px;
+    /* height: 40px; */
     width: 159px;
     margin: 8px auto 10px;
     color: #0f84a9;
@@ -1917,14 +2032,14 @@ a.main_btn:hover {
     line-height: 25px;
     text-align: center;
   }
-  .owl-carousel .owl-item {
+  .list-4 .owl-item {
     border-right: solid 1px #cecece;
   }
 
-  .owl-carousel .owl-item:last-child {
+  .list-4 .owl-item:last-child {
     border-right: 0px;
   }
-  .owl-carousel .item {
+  .list-4 .item {
     text-align: center;
     border-right: solid 1px #cecece;
     width: 410px;
@@ -1935,19 +2050,19 @@ a.main_btn:hover {
     width: 260px;
   }
 
-  .owl-carousel .item:last-child,
+  .list-4 .item:last-child,
   .list-6 .item:last-child {
     border-right: 0px;
   }
 
-  .owl-carousel .item .image {
+  .list-4 .item .image {
     text-align: center;
     width: 100%;
     height: 90px;
     position: relative;
   }
 
-  .owl-carousel img {
+  .list-4 img {
     max-height: 100%;
     max-width: 100%;
     position: absolute;
@@ -1959,7 +2074,7 @@ a.main_btn:hover {
     width: initial !important;
   }
 
-  .owl-carousel .item .title {
+  .list-4 .item .title {
     /* height: 40px; */
     width: 308px;
     color: #0f84a9;
@@ -1972,7 +2087,7 @@ a.main_btn:hover {
     margin: 8px auto 10px;
   }
 
-  .owl-carousel .item .desc {
+  .list-4 .item .desc {
     /* height: 84px; */
     width: 330px;
     color: #788081;
@@ -1991,21 +2106,21 @@ a.main_btn:hover {
   #review_owl .owl-item {
     border: none;
   }
-  .owl-carousel .owl-prev {
+  .list-4 .owl-prev {
     position: absolute;
     top: 20%;
     left: 0;
     padding: 7px !important;
   }
 
-  .owl-carousel .owl-next {
+  .list-4 .owl-next {
     position: absolute;
     top: 20%;
     right: 0;
     padding: 7px !important;
   }
 
-  .owl-carousel .copy {
+  .list-4 .copy {
     /* height: 50px; */
     width: 42px;
     color: #fdca21;
@@ -2017,12 +2132,12 @@ a.main_btn:hover {
     text-align: center;
   }
 
-  .owl-carousel .item-no-border {
+  .list-4 .item-no-border {
     text-align: center;
     width: 410px;
   }
 
-  .owl-carousel .bottom {
+  .list-4 .bottom {
     height: initial;
     width: 220px;
     color: #0f84a9;
@@ -2469,10 +2584,10 @@ a.main_btn:hover {
       background: transparent; */
   }
 
-  .owl-carousel .test_item {
+  .list-4 .test_item {
     position: relative;
   }
-  .owl-carousel .test_item .image {
+  .list-4 .test_item .image {
     text-align: center;
     width: 270px;
     height: 230px;
@@ -2480,7 +2595,7 @@ a.main_btn:hover {
     margin: 0 auto;
   }
 
-  .owl-carousel .test_item .image span {
+  .list-4 .test_item .image span {
     position: absolute;
     bottom: 20px;
     left: -15px;
