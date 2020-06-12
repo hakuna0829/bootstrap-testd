@@ -476,9 +476,12 @@ a.main_btn:hover {
     letter-spacing: 0;
     line-height: 11px;
     text-align: center;
-    margin: 10px auto 30px;
+    margin: 10px auto 20px;
   }
 
+  .sub_header2 input {
+    text-align: center;
+  }
   .sub_header2 .button {
     text-align: center;
     margin: 40px;
@@ -543,10 +546,10 @@ a.main_btn:hover {
     width: 210px;
     color: #000000;
     font-family: Montserrat;
-    font-size: 16px;
+    font-size: 11px;
     font-weight: 500;
     letter-spacing: 0;
-    line-height: 19px;
+    line-height: 14px;
     text-align: center;
     border: none;
   }
@@ -1340,7 +1343,7 @@ a.main_btn:hover {
     display: flex;
     text-align: center;
     justify-content: center;
-    margin: 30px auto 50px;
+    margin: 20px auto 20px;
   }
   a.btn_green {
     box-sizing: border-box;
@@ -1361,6 +1364,274 @@ a.main_btn:hover {
     text-decoration: none;
     background-color: #fff;
     color: #3ecccd;
+  }
+
+  /* connect with us */
+
+  .social_pannel {
+    margin-bottom: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .social_pannel .item {
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    margin-right: 30px;
+    position: relative;
+  }
+
+  .social_pannel .item:last-child {
+    margin: 0px;
+  }
+
+  .social_pannel .item img {
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .section_mapview {
+    /* height: 680px; */
+    width: 100%;
+    /* border: 6px solid #3ecccd; */
+    margin: 0 auto 50px;
+    position: relative;
+  }
+
+  .section_mapview .green-bar {
+    position: absolute;
+    height: 54px;
+    width: 100%;
+    background-color: #3ecccd;
+    top: 31%;
+  }
+
+  #map {
+    height: 167px;
+    width: 300px;
+    border: 6px solid #3ecccd;
+    background-color: grey;
+    z-index: 10;
+    margin: 0 auto;
+  }
+
+  .post_pannel.desktop {
+    display: none;
+  }
+
+  .post_pannel.mobile {
+    /* display: inline-block !important; */
+  }
+
+  .post_pannel {
+    width: 100%;
+    /* display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: space-evenly; */
+  }
+
+  .post_pannel .item {
+    box-sizing: border-box;
+    /* width: 406px; */
+    border: 2px solid #cecece;
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 10px;
+    position: relative;
+    margin: 0 auto 20px;
+  }
+
+  .post_pannel .head {
+    display: flex;
+    width: 330px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .post_pannel .head .avatar {
+    height: 65px;
+    width: 49px;
+    position: relative;
+  }
+
+  .post_pannel .head .avatar img {
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .post_pannel .head .info .title {
+    /* margin: 15px auto 20px; */
+    color: #0f84a9;
+    font-family: Montserrat;
+    font-size: 13.28px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 20px;
+    text-align: left;
+    margin: 0;
+  }
+  .post_pannel .head .info .code {
+    color: #0f84a9;
+    font-family: ".SF NS Display";
+    font-size: 13.28px;
+    letter-spacing: 0;
+    line-height: 20px;
+    margin: 0;
+  }
+
+  .post_pannel .origin-flag {
+    height: 28px;
+    width: 45px;
+    color: #fff;
+    text-align: center;
+    line-height: 1.3em;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: -7px;
+    margin-top: 7px;
+    z-index: 1;
+    background-color: #3ecccd !important;
+  }
+
+  .post_pannel .origin-flag:after {
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid #2e8dad;
+    content: " ";
+    height: 0;
+    position: absolute;
+    right: 0;
+    top: 28px;
+    width: 0;
+  }
+
+  .post_pannel .sb-icon-twitter {
+    background-image: url(../image/twitter_white.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 23px;
+    width: 25px;
+    top: 3px;
+    position: relative;
+  }
+
+  .post_pannel .sb-icon-facebook {
+    background-image: url(../image/facebook_white.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 23px;
+    width: 25px;
+    top: 3px;
+    left: 4px;
+    position: relative;
+  }
+
+  .post_pannel .sb-icon-linkedin {
+    background-image: url(../image/linkedIn_white.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 23px;
+    width: 25px;
+    top: 3px;
+    position: relative;
+  }
+  .post_pannel .image {
+    height: 202px;
+    width: 100%;
+    position: relative;
+  }
+  .post_pannel .image img {
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .post_pannel .desc {
+    color: #0f84a9;
+    font-family: Montserrat;
+    font-size: 13.28px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 20px;
+    width: 330px;
+    height: 40px;
+    margin: 10px auto;
+  }
+  .post_pannel .social {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .post_pannel .social img {
+    margin-right: 15px;
+    width: initial !important;
+  }
+
+  .post_pannel .social img:last-child {
+    margin-right: 0px;
+  }
+
+  .post_pannel .divider {
+    width: 350px;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .post_pannel .foot {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  .post_pannel .foot .post_time {
+    color: #043b5d;
+    font-family: Montserrat;
+    font-size: 13.28px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 20px;
+  }
+
+  .post_pannel .foot img {
+    height: 30px;
+    width: 26px;
+  }
+
+  .post_pannel .owl-next {
+    top: 35%;
+    right: 10px;
+  }
+
+  .post_pannel .owl-prev {
+    top: 35%;
+    left: 10px;
   }
 }
 
@@ -3031,6 +3302,14 @@ a.main_btn:hover {
     background-color: grey;
     z-index: 10;
     margin: 0 auto;
+  }
+
+  .post_pannel.desktop {
+    display: flex;
+  }
+
+  .post_pannel.mobile {
+    display: none !important;
   }
 
   .post_pannel {

@@ -16,6 +16,11 @@
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="asset/css/custom.css" />
 
+    <!-- owl carousel css-->
+    <link rel="stylesheet" href="asset/libs/owlcarousel/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="asset/libs/owlcarousel/css/owl.theme.default.min.css">
+
+
 </head>
 
 <body>
@@ -85,7 +90,7 @@
             </div>
 
         </div>
-        <div class="post_pannel">
+        <div class="post_pannel desktop">
 
             <div class="item col-md-3">
                 <div class="head">
@@ -145,6 +150,96 @@
             </div>
 
             <div class="item col-md-3">
+                <div class="head">
+                    <div class="avatar">
+                        <img src="asset/image/coffee_logo.svg" />
+                    </div>
+                    <div class="info">
+                        <p class="title">Brew Coffee Shop</p>
+                        <p class="code">@brewcoffeeshop</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="asset/image/lady_1.jpg" />
+
+                </div>
+                <div class="desc">“Using TESTD my entire staff is safe and secure.
+                    They no longer are afraid to come to work.”</div>
+                <div class="social">
+                    <img src="asset/image/social/facebook_gray.svg" />
+                    <img src="asset/image/social/linkedIn_gray.svg" />
+                    <img src="asset/image/social/twitter_gray.svg" />
+                </div>
+                <hr class="divider" />
+                <div class="foot">
+                    <div class="post_time">Posted: 6 hours ago</div>
+                    <div><img src="asset/image/UploadPhoto.svg" /></div>
+                </div>
+                <span class="origin-flag sb-twitter"><i class="sb-icon sb-icon-linkedin"></i></span>
+            </div>
+
+
+        </div>
+        <div class="owl-carousel owl-theme post_pannel mobile">
+
+            <div class="item">
+                <div class="head">
+                    <div class="avatar">
+                        <img src="asset/image/coffee_logo.svg" />
+                    </div>
+                    <div class="info">
+                        <p class="title">Brew Coffee Shop</p>
+                        <p class="code">@brewcoffeeshop</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="asset/image/lady_1.jpg" />
+
+                </div>
+                <div class="desc">“Using TESTD my entire staff is safe and secure.
+                    They no longer are afraid to come to work.”</div>
+                <div class="social">
+                    <img src="asset/image/social/facebook_gray.svg" />
+                    <img src="asset/image/social/linkedIn_gray.svg" />
+                    <img src="asset/image/social/twitter_gray.svg" />
+                </div>
+                <hr class="divider" />
+                <div class="foot">
+                    <div class="post_time">Posted: 6 hours ago</div>
+                    <div><img src="asset/image/UploadPhoto.svg" /></div>
+                </div>
+                <span class="origin-flag sb-twitter"><i class="sb-icon sb-icon-twitter"></i></span>
+            </div>
+
+            <div class="item">
+                <div class="head">
+                    <div class="avatar">
+                        <img src="asset/image/Barbershop_logo.svg" />
+                    </div>
+                    <div class="info">
+                        <p class="title">Barbershop</p>
+                        <p class="code">@barbershop</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="asset/image/guy_1.png" />
+
+                </div>
+                <div class="desc">“Thanks to TESTD my customers feel safe."</div>
+                <div class="social">
+                    <img src="asset/image/social/facebook_gray.svg" />
+                    <img src="asset/image/social/linkedIn_gray.svg" />
+                    <img src="asset/image/social/twitter_gray.svg" />
+                </div>
+                <hr class="divider" />
+                <div class="foot">
+                    <div class="post_time">Posted: 2 hours ago</div>
+                    <div><img src="asset/image/UploadPhoto.svg" /></div>
+                </div>
+                <span class="origin-flag sb-twitter"><i class="sb-icon sb-icon-facebook"></i></span>
+            </div>
+
+            <div class="item">
                 <div class="head">
                     <div class="avatar">
                         <img src="asset/image/coffee_logo.svg" />
@@ -301,13 +396,42 @@
     integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
 
+<!-- owl carousel script -->
+<script src="asset/libs/owlcarousel/owl.carousel.min.js"></script>
+
 <!--fontawesome-->
 <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
     integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
     crossorigin="anonymous"></script>
 
-
-
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            lazyLoad: true,
+            nav: true,
+            navText: ["<img src='asset/image/chevrons_left_yellow.png'>", "<img src='asset/image/chevrons_right_yellow.png'>"],
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 3,
+                    nav: false
+                },
+                1000: {
+                    items: 3,
+                    nav: true,
+                    loop: true,
+                }
+            }
+        })
+        $('.owl-dots').css('display', 'none');
+    });
+</script>
 <script>
     // Initialize and add the map
     function initMap() {
