@@ -13,17 +13,12 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-  <link rel="stylesheet" href="asset/css/custom.css" />
 
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-    crossorigin="anonymous"></script>
-  <!--fontawesome-->
-  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
-    integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
-    crossorigin="anonymous"></script>
-  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <!-- owl carousel css-->
+  <link rel="stylesheet" href="asset/libs/owlcarousel/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="asset/libs/owlcarousel/css/owl.theme.default.min.css">
   <!--This is used for search icon. Instead putting icon manually it is loaded from fontawesome-->
+  <link rel="stylesheet" href="asset/css/custom.css" />
   <title>Testd&trade;</title>
 </head>
 
@@ -100,11 +95,17 @@
     </div>
   </div>
   <div class="container">
+    <div class="header-text-mobile">
+      <p class="title">Getting safely back to work</p>
+      <p class="description">
+        Test for COVID-19 at work or at home.<br />
+        Share results by phone as needed</p>
+    </div>
     <p class="sub_header">
       The first blockchain system for COVID-19 testing.<br>
       Protects privacy, creates confidence.
     </p>
-    <div class="list-4">
+    <div class="owl-carousel owl-theme" id="blochchain_owl">
       <div class="item">
         <div class="image">
           <img src="asset/image/hippa.png">
@@ -151,12 +152,59 @@
       </div>
     </div>
 
+    <!-- <div class="list-4">
+      <div class="item">
+        <div class="image">
+          <img src="asset/image/hippa.png">
+        </div>
+        <p class="title">100% HIPPA Compliant</p>
+        <p class="desc">
+          Keeps COVID-19 status <br class="desktop">
+          separate from sensitive, <br class="desktop">
+          private medical details
+        </p>
+      </div>
+      <div class="item">
+        <div class="image">
+          <img src="asset/image/secure.png">
+        </div>
+        <p class="title">Secure Test Reporting</p>
+        <p class="desc">
+          Results can’t be forged<br class="desktop">
+          or stolen, and are<br class="desktop">
+          displayed when needed
+        </p>
+      </div>
+      <div class="item">
+        <div class="image">
+          <img src="asset/image/Verification.png">
+        </div>
+        <p class="title">Total Identity Verification</p>
+        <p class="desc">
+          Tests are locked to a user’s<br class="desktop">
+          Face ID or Touch ID for confidence<br class="desktop">
+          in the user’s identity
+        </p>
+      </div>
+      <div class="item">
+        <div class="image">
+          <img src="asset/image/Trust.png">
+        </div>
+        <p class="title">Complete Trust System</p>
+        <p class="desc">
+          The TESTD app and corporate<br class="desktop">
+          dashboard show who’s ill<br class="desktop">
+          and who’s safe
+        </p>
+      </div>
+    </div> -->
+
   </div>
   <div class="section_video">
     <div class="green-bar"></div>
     <div class="nav-bar">
-      <a href="#"> <img src="asset/image/chevrons_left.png" /></a>
-      <a href="#"> <img src="asset/image/chevrons_right.png" /></a>
+      <a href="#"> <img class='prev' src="asset/image/chevrons_left.png" /></a>
+      <a href="#"> <img class='next' src="asset/image/chevrons_right.png" /></a>
     </div>
     <div class="container">
       <p class="sub_header">
@@ -174,8 +222,9 @@
     <p class="sub_header">
       Read our reviews
     </p>
-    <div class="list-4">
-      <div class="item-no-border">
+    <!-- <div class="list-4"> -->
+    <div class="owl-carousel owl-theme" id="review_owl">
+      <div class="item">
         <span class="copy">“</span>
         <p class="title">
           “Test at home and STILL get<br class="desktop">
@@ -187,7 +236,7 @@
         </p>
         <p class="bottom">Doctors on Demand</p>
       </div>
-      <div class="item-no-border">
+      <div class="item">
         <span class="copy">“</span>
         <p class="title">“When my whole staff and patients<br class="desktop">
           get TESTD, that’s how I’ll know<br class="desktop">
@@ -198,7 +247,7 @@
         </p>
         <p class="bottom">Dentist Office</p>
       </div>
-      <div class="item-no-border">
+      <div class="item">
         <span class="copy">“</span>
         <p class="title">“I need this. I want this! I own a bar, not a<br class="desktop">
           clinic. My customers can show a current <br class="desktop">
@@ -210,7 +259,7 @@
         </p>
         <p class="bottom">Brewery</p>
       </div>
-      <div class="item-no-border">
+      <div class="item">
         <span class="copy">“</span>
         <p class="title">
           “I can show the same test at every <br class="desktop">
@@ -321,17 +370,20 @@
                 <li><a href="faq.html">FAQs</a></li>
               </ul>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 social_panel">
               <ul>
                 <li class="social"><a href="#">
-                    <div class="label">Facebook</div> <img src="asset/image/facebook_white.svg">
+                    <img src="asset/image/facebook_white.svg">
+                    <div class="label">Facebook</div>
                   </a></li>
                 <li class="social"><a href="#">
-                    <div class="label">Linked In</div><img src="asset/image/linkedIn_white.svg">
+                    <img src="asset/image/linkedIn_white.svg">
+                    <div class="label">Linked In</div>
                   </a></li>
                 <li class="social">
                   <a href="#">
-                    <div class="label">Twitter</div> <img src="asset/image/twitter_white.svg">
+                    <img src="asset/image/twitter_white.svg">
+                    <div class="label">Twitter</div>
                   </a>
                 </li>
               </ul>
@@ -417,10 +469,49 @@
 
   </div>
 </div>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+  integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<!--fontawesome-->
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+  integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<!-- owl carousel script -->
+<script src="asset/libs/owlcarousel/owl.carousel.min.js"></script>
 <script type="text/javascript">
   var onloadCallback = function () {
     alert("grecaptcha is ready!");
   };
+  $(document).ready(function () {
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      responsiveClass: true,
+      lazyLoad: true,
+      nav: true,
+      navText: ["<img class='prev' src='asset/image/chevrons_left_yellow.png'>", "<img src='asset/image/chevrons_right_yellow.png' class='next'>"],
+      responsive: {
+        0: {
+          items: 1,
+          nav: true
+        },
+        600: {
+          items: 3,
+          nav: false
+        },
+        1000: {
+          items: 3,
+          nav: true,
+          loop: true,
+        },
+        1900: {
+          items: 4,
+          nav: false,
+          loop: false,
+        }
+      }
+    })
+    $('.owl-dots').css('display', 'none');
+  });
 </script>
 
 </html>
