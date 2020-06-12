@@ -168,7 +168,7 @@ a.main_btn:hover {
   }
 
   .sub_header {
-    height: 32px;
+    /* height: 32px; */
     /* width: 375px; */
     color: #0f84a9;
     font-family: Montserrat;
@@ -177,7 +177,7 @@ a.main_btn:hover {
     letter-spacing: 0;
     line-height: 14px;
     text-align: center;
-    margin: 0 auto;
+    margin: 10px auto;
   }
 
   .list-4 .owl-item {
@@ -454,13 +454,12 @@ a.main_btn:hover {
   .sub_desc {
     color: #788081;
     font-family: Montserrat;
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 9px;
     letter-spacing: 0;
-    line-height: 34px;
+    line-height: 15px;
     text-align: center;
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   .section_video .container img {
@@ -1107,6 +1106,261 @@ a.main_btn:hover {
 
   .num_card .top_right_corner img {
     width: 100%;
+  }
+
+  /* howitworks */
+  .section_contact_green {
+    height: 100px;
+    width: 100%;
+    background-color: #3ecccd;
+  }
+
+  .section_contact_green .row {
+    height: 84px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .section_contact_green .title {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 14px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .section_contact_green .contact_email {
+    text-align: center;
+    box-sizing: border-box;
+    height: 22px;
+    width: 158px;
+    border: 1px solid #3ecccd;
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    display: inline-table;
+    padding: 0px 0 5px;
+  }
+
+  .section_contact_green .contact_email input {
+    height: 13px;
+    width: 145px;
+    border: none;
+    /* 1px solid #3ecccd; */
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 13px;
+    text-align: center;
+  }
+
+  .section_contact_green .contact_button {
+    text-align: center;
+  }
+
+  a.main_btn_2 {
+    box-sizing: border-box;
+    height: 13px;
+    /* width: 161px;  */
+    border: 1px solid #0f84a9;
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 8px 11px;
+    /* height: 22px;
+      width: 121px; */
+    color: #0f84a9;
+    /* color: #ffffff; */
+    font-family: Montserrat;
+    font-size: 10.28px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 13px;
+    text-align: center;
+  }
+
+  a.main_btn_2:hover {
+    box-sizing: border-box;
+    height: 41px;
+    width: 161px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    background-color: #3ecccd;
+    padding: 8px 15px;
+    color: #0f84a9;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 22px;
+    text-align: right;
+    text-decoration: none;
+    /* border-color: white;
+      background: transparent; */
+  }
+
+  .test_item {
+    position: relative;
+  }
+  .test_item .image {
+    text-align: center;
+    width: 270px;
+    height: 230px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .test_item .image span {
+    position: absolute;
+    bottom: 20px;
+    left: -15px;
+    padding: 5px 12px;
+    border-radius: 50%;
+    background: #fdca21;
+    font-weight: 700;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: 19px;
+  }
+  .owl-nav button {
+    cursor: pointer;
+  }
+
+  .owl-nav button img {
+    width: 20px;
+  }
+
+  .owl-prev {
+    position: absolute;
+    top: 30%;
+    left: 0;
+  }
+
+  .owl-next {
+    position: absolute;
+    top: 30%;
+    right: 0;
+  }
+
+  .test_item .image {
+    text-align: center;
+    width: 230px;
+    height: 180px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .test_item img {
+    /* width: 82px; */
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .test_item .title {
+    margin: 10px auto 15px;
+    color: #0f84a9;
+    font-family: Montserrat;
+    font-size: 10.72px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 13.5px;
+    margin: 15px auto;
+    text-align: center;
+  }
+
+  /* our story */
+  .manager_team.admin_desktop {
+    display: none;
+  }
+  .manager_team.admin_mobile {
+    display: initial;
+  }
+  .manager_team .item {
+    text-align: center;
+  }
+
+  .manager_team.admin_mobile .owl-prev {
+    position: absolute;
+    top: 30%;
+    left: -15px;
+  }
+
+  .manager_team.admin_mobile .owl-next {
+    position: absolute;
+    top: 30%;
+    right: -15px;
+  }
+
+  .manager_team .item .image {
+    height: 170px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+  }
+
+  .manager_team .item .image img {
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .manager_team .item .title {
+    margin: 10px auto 10px;
+    color: #0f84a9;
+    font-family: Montserrat;
+    font-size: 10.72px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 13px;
+    text-align: center;
+  }
+
+  .connect_pannel {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 30px auto 50px;
+  }
+  a.btn_green {
+    box-sizing: border-box;
+    height: 26px;
+    width: 130px;
+    border: 1px solid #0f84a9;
+    border-radius: 10px;
+    background-color: #3ecccd;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 10.28px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 13px;
+    padding: 5px 10px;
+  }
+  a.btn_green:hover {
+    text-decoration: none;
+    background-color: #fff;
+    color: #3ecccd;
   }
 }
 
@@ -2595,7 +2849,7 @@ a.main_btn:hover {
     margin: 0 auto;
   }
 
-  .list-4 .test_item .image span {
+  .test_item .image span {
     position: absolute;
     bottom: 20px;
     left: -15px;
@@ -2625,9 +2879,10 @@ a.main_btn:hover {
 
   .test_item .image {
     text-align: center;
-    width: 100%;
-    height: 245px;
+    width: 300px;
+    height: 250px;
     position: relative;
+    margin: 0 auto;
   }
 
   .test_item-4 img {
@@ -2655,6 +2910,12 @@ a.main_btn:hover {
   }
 
   /* our story */
+  .manager_team.admin_desktop {
+    display: initial;
+  }
+  .manager_team.admin_mobile {
+    display: none;
+  }
   .manager_team .item {
     text-align: center;
   }
