@@ -692,12 +692,16 @@ a.main_btn:hover {
   .navbar-toggler:not(:disabled):not(.disabled) {
     cursor: pointer;
     position: absolute;
-    top: 10px;
+    top: 0px;
     left: -15px;
     background: transparent !important;
     border: none;
   }
 
+  .navbar-toggler-icon {
+    width: 1em;
+    height: 1em;
+  }
   .navbar-toggler:hover,
   .navbar-toggler:active {
     border: none;
@@ -714,8 +718,8 @@ a.main_btn:hover {
   }
   .navbar-nav {
     position: absolute;
-    left: -30px;
-    top: 45px;
+    left: -15px;
+    top: 20px;
     z-index: 10;
   }
   .text-light {
