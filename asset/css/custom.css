@@ -3069,6 +3069,93 @@ footer .right_logo {
     height: 22px;
     width: 19px;
   }
+
+  /* FAQ */
+  #faq_accordion {
+    width: 640px;
+    margin: 100px auto;
+  }
+  #faq_accordion .card {
+    border: 0px;
+    border-bottom: solid 1px #cecece;
+    border-radius: 0px;
+  }
+
+  #faq_accordion .card .card-header {
+    border: 0px;
+  }
+
+  #faq_accordion .card-header .btn-link {
+    color: #0f84a9;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 42px;
+    text-decoration: none;
+  }
+  #faq_accordion .card-header h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #faq_accordion .circle.plus {
+    border: 1px solid #0f84a9;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    position: relative;
+    margin: 4px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  #faq_accordion .circle.plus:before,
+  #faq_accordion .circle.plus:after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    background: #0f84a9;
+  }
+  #faq_accordion .circle.plus:before {
+    width: 3px;
+    margin: 3px auto;
+  }
+  #faq_accordion .circle.plus:after {
+    margin: auto 3px;
+    height: 3px;
+  }
+  #faq_accordion .circle.minus {
+    border: 1px solid #cecece;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    position: relative;
+    margin: 4px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  #faq_accordion .circle.minus:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    background: #cecece;
+    margin: auto 2px;
+    height: 2px;
+  }
+
+  #faq_accordion .card-body {
+    color: #0f84a9;
+    font-family: Montserrat;
+    font-size: 11px;
+    letter-spacing: 0;
+    line-height: 15px;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -3635,7 +3722,10 @@ footer .right_logo {
     border-right: 1px solid #043b5d;
     height: 15px;
   }
-
+  footer .col-md-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
   .navbar-brand {
     line-height: 15px;
     padding-top: 5px;
