@@ -2536,7 +2536,6 @@ footer .right_logo {
   .list-6 .item {
     text-align: center;
     margin-bottom: 25px;
-    /* width: 260px; */
   }
 
   .list-6 .item .image {
@@ -2578,6 +2577,179 @@ footer .right_logo {
     line-height: 21.6px;
     text-align: center;
     margin: 0 auto;
+  }
+
+  /* howitworks */
+
+  .sub_desc {
+    color: #788081;
+    font-family: Montserrat;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 20px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .section_contact_green {
+    height: 44px;
+    width: 100%;
+    background-color: #3ecccd;
+  }
+
+  .section_contact_green .row {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+  }
+
+  .section_contact_green .title {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 22px;
+    text-align: left;
+  }
+
+  .section_contact_green .contact_email {
+    margin: -5px 0 0;
+  }
+
+  .section_contact_green .contact_email input {
+    box-sizing: border-box;
+    height: 26px;
+    width: 170px;
+    border: 1px solid #3ecccd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Montserrat;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 13px;
+  }
+
+  .section_contact_green .contact_button {
+    margin-top: -4px;
+  }
+
+  a.main_btn_2 {
+    height: 16px;
+    width: 91px;
+    border: 1px solid #3ecccd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 4px 7px;
+    color: #0f84a9;
+    font-family: Montserrat;
+    text-align: right;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 14px;
+  }
+
+  a.main_btn_2:hover {
+    box-sizing: border-box;
+    height: 41px;
+    width: 161px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    background-color: #3ecccd;
+    padding: 8px 15px;
+    color: #0f84a9;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 22px;
+    text-align: right;
+    text-decoration: none;
+    /* border-color: white;
+      background: transparent; */
+  }
+
+  .list-4 .test_item {
+    position: relative;
+  }
+  .list-4 .test_item .image {
+    text-align: center;
+    width: 270px;
+    height: 70px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .test_item .image span {
+    position: absolute;
+    bottom: 0px;
+    left: -20px;
+    padding: 0px 13px;
+    border-radius: 50%;
+    background: #fdca21;
+    font-family: "Monserrat";
+    font-weight: 700;
+    font-size: 25px;
+    color: #fff;
+  }
+  .owl-nav button {
+    cursor: pointer;
+  }
+
+  .owl-nav img {
+    width: 20px;
+  }
+
+  .owl-prev {
+    position: absolute;
+    top: 20%;
+    left: 0;
+  }
+
+  .owl-next {
+    position: absolute;
+    top: 20%;
+    right: 0;
+  }
+
+  .test_item {
+    margin-bottom: 20px;
+  }
+  .test_item .image {
+    text-align: center;
+    width: 110px;
+    height: 70px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .test_item img {
+    /* width: 82px; */
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .test_item .title {
+    margin: 10px auto 10px;
+    color: #0f84a9;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 18px;
+    text-align: center;
   }
 }
 
