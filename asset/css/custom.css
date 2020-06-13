@@ -121,6 +121,22 @@ a.main_btn:hover {
     background: transparent; */
 }
 
+.owl-carousel.review {
+  display: none;
+}
+
+.desktop.review {
+  display: initial;
+}
+
+footer .logo_panel .title {
+  display: none;
+}
+footer .right_logo {
+  margin: 0 auto;
+  display: initial;
+}
+
 /* Small devices (landscape phones, 375px and up) */
 @media (max-width: 375px) {
   .header {
@@ -485,6 +501,14 @@ a.main_btn:hover {
   .sub_header2 .button {
     text-align: center;
     margin: 40px;
+  }
+
+  .owl-carousel.review {
+    display: inline-flex;
+  }
+
+  .desktop.review {
+    display: none;
   }
 
   a.main_btn {
@@ -1811,71 +1835,558 @@ a.main_btn:hover {
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
   .header {
-    height: 570px;
+    height: 178px;
   }
-  footer {
-    width: 100%;
-    background: url(../image/footer_background.png);
-    /* background-position: center; */
-    background-repeat: no-repeat;
-    background-size: cover;
+
+  .header .px-3 {
+    padding-left: 0.3rem !important;
+    padding-right: 0.3rem !important;
   }
-  footer .container {
-    /* margin: 30px auto; */
+
+  #nav {
+    margin-left: -15px;
+  }
+  .navbar-nav .nav-item {
+    border-right: 1px solid #043b5d;
+    height: 9px;
+  }
+
+  .navbar-brand {
+    line-height: 15px;
+  }
+  .navbar-brand img {
+    height: 10px;
+    width: 30px;
+  }
+
+  .header .header-text {
+    width: 110px;
+    position: absolute;
+    left: 150px;
+    top: 80px;
+  }
+
+  .header .header-text .title,
+  .header2 .header-text .title {
     font-family: "Montserrat";
-    padding: 40px 0;
-  }
-  footer .content {
-    margin: 40px 0;
-  }
-  footer .footer_logo {
-    width: 160px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 16px;
+    margin-bottom: 5px;
   }
 
-  footer ul {
-    padding-left: 0px;
-    width: 90%;
-    border-right: solid 3px white;
+  .header .header-text .description,
+  .header2 .header-text .description {
+    color: #043b5d;
+    font-family: Montserrat;
+    font-size: 7.5px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 9px;
   }
 
-  footer .content > div:last-child ul {
+  .text-light {
+    color: #043b5d;
+    font-family: Montserrat;
+    font-size: 6px;
+    font-weight: 600;
+    letter-spacing: 0;
+  }
+
+  .sub_header {
+    width: 100%;
+    color: #0f84a9;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 20px;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .sub_header2 {
+    color: #0f84a9;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 22px;
+    text-align: center;
+    margin: 40px auto 50px;
+  }
+
+  .sub_header2 .button {
+    text-align: center;
+    margin: 40px;
+  }
+
+  .list-4 .owl-item {
+    border-right: solid 1px #cecece;
+  }
+
+  .list-4 .owl-item:last-child {
+    border-right: 0px;
+  }
+  .list-4 .item {
+    text-align: center;
+    border-right: solid 1px #cecece;
+    /* width: 410px; */
+  }
+
+  .list-6 .item {
+    text-align: center;
+    width: 260px;
+  }
+
+  .list-4 .item:last-child,
+  .list-6 .item:last-child {
     border-right: 0px;
   }
 
-  footer .content > div:nth-child(2) ul {
-    width: 95%;
+  .list-4 .item .image {
+    text-align: center;
+    width: 100%;
+    height: 90px;
+    position: relative;
   }
 
-  footer .social {
+  .list-4 img {
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: initial !important;
+  }
+
+  .list-4 .item .title {
+    /* height: 40px; */
+    color: #0f84a9;
+    font-family: Montserrat;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 16px;
+    text-align: center;
+    margin: 0px auto;
+  }
+
+  .list-4 .item .desc {
+    /* height: 84px; */
+    /* width: 330px; */
+    color: #788081;
+    font-family: Montserrat;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 16px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .list-4 .copy,
+  .list-6 .copy {
+    /* height: 50px; */
+    width: 42px;
+    color: #fdca21;
+    font-family: Georgia;
+    font-size: 59px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 67px;
+    text-align: center;
+  }
+
+  .list-4 .bottom {
+    height: initial;
+    /* width: 220px; */
+    color: #0f84a9;
+    font-family: Montserrat;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 16px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  a.main_btn {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 19px;
+    padding: 5px 10px;
+    background: #3ecccd;
+    border: solid #0f84a9 1px;
+  }
+
+  a.main_btn:hover {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 19px;
+    padding: 5px 10px;
+    background: #fff;
+    color: #3ecccd;
+    text-decoration: none;
+  }
+
+  #review_owl .owl-item {
+    border: none;
+  }
+
+  #firstname {
+    text-align: center;
+  }
+  .divider_short {
+    box-sizing: border-box;
+    height: 2px;
+    width: 476px;
+    border: 1px solid #788081;
+    margin: 0 auto;
+  }
+
+  .section_video {
+    width: 100%;
+    position: relative;
+  }
+
+  .section_video .container {
+    text-align: center;
+  }
+
+  .section_video iframe {
+    width: 350px;
+    height: 192px;
+    position: relative;
+    z-index: 10;
+  }
+
+  .section_video .green-bar {
+    position: absolute;
+    height: 91px;
+    width: 100%;
+    background-color: #3ecccd;
+    top: 38%;
+  }
+
+  .section_video .nav-bar {
+    display: none;
+    position: absolute;
+    /* height: 224px; */
+    width: 100%;
+    background-color: #3ecccd;
+    top: 54%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .section_video .nav-bar img {
+    width: initial;
+  }
+
+  .section_video .sub_header {
+    z-index: 10;
+    position: relative;
+  }
+
+  .sub_desc {
+    color: #788081;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 34px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .section_video .container img {
+    z-index: 10;
+    position: relative;
+  }
+
+  .owl-carousel.review {
+    display: none;
+  }
+
+  .desktop.review {
+    display: initial;
+  }
+
+  .desktop.review .item {
+    border: none;
+    margin: 10px auto 5px;
+  }
+
+  .list-5 .item {
+    text-align: center;
+    width: 50%;
+  }
+
+  .list-5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .list-5 .item {
+    text-align: center;
+    /* width: 310px; */
+  }
+
+  .list-5 .item .image {
+    text-align: center;
+    width: 100%;
+    height: 70px;
+    position: relative;
+    border-right: solid 2px #cecece;
+  }
+
+  /* .list-5 .item:nth-child(3n) .image {
+    border-right: solid red 1px;
+  } */
+  .list-5 .item:nth-child(even) .image {
+    border-right: none;
+  }
+
+  .list-5 .item:last-child .image {
+    border-right: 0px;
+  }
+
+  .list-5 img {
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .list-5 .title {
+    /* width: 240px; */
+    color: #0f84a9;
+    font-family: Montserrat;
+    font-size: 13.57px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 18.12px;
+    text-align: center;
+    margin: 10px auto 20px;
+  }
+
+  .line-divider {
+    box-sizing: border-box;
+    height: 1px;
+    width: 50%;
+    border: 1px solid #788081;
+    margin: 15px auto;
+  }
+
+  footer .content {
+    margin: 40px 0 10px;
+    max-height: 900px;
+  }
+
+  footer .subscribe {
+    width: 100%;
+    height: 50px;
+    background-color: #0f84a9;
+    text-align: center;
+    position: relative;
+  }
+
+  footer .subscribe .desc {
+    color: #fff;
+    font-family: Montserrat;
+    letter-spacing: 0;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 0px 0px 15px;
+  }
+
+  footer .subscribe .emailForm {
+    position: absolute;
+    top: 13px;
+    right: 25%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 3px 0;
+    display: flex;
+    height: 27px;
+    width: 194px;
+    border: 1px solid #3ecccd;
+  }
+
+  footer .subscribe .emailForm input {
+    text-align: center;
+    border: none;
+    height: 14px;
+    width: 165px;
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 14px;
+    margin-top: 3px;
+    margin: 3px auto 0;
+  }
+
+  footer .subscribe .emailForm input:focus {
+    outline: none !important;
+    border: 0px white solid;
+    /* box-shadow: 0 0 10px #719ece; */
+  }
+
+  footer .subscribe .btn_subscribe {
+    position: absolute;
+    top: 13px;
+    right: 10%;
+  }
+
+  footer .subscribe .btn_subscribe .main_btn {
+    padding: 5px 10px;
+    background: #fff;
+    border: solid #0f84a9 1px;
+    height: 14px;
+    width: 84px;
+    color: #0f84a9;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 15px;
+  }
+
+  footer .subscribe .main {
+    background: #fff;
+    border: 1px solid #3ecccd;
+    border-radius: 8px;
+    padding: 8px 15px;
+    font-size: 18px;
+    height: 19px;
+    width: 126px;
+    color: #0f84a9;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 19px;
+    margin-left: 0px;
+  }
+
+  footer .subscribe .main:hover {
+    padding: 8px 15px;
+    height: 19px;
+    width: 126px;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 19px;
+    margin-left: 0px;
+    border-color: white;
+    background: transparent;
+    text-decoration: none;
+  }
+
+  footer .logo_panel {
+    display: flex;
+  }
+
+  footer .logo_panel .title {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 30px;
+    text-align: center;
+    margin-left: 10px;
+    display: initial;
+  }
+
+  footer .right_logo {
+    margin: 0 auto;
+    display: none;
+  }
+
+  footer .right_logo p {
+    height: 80px;
+    width: 267px;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 40px;
+    text-align: right;
+    margin-top: 20%;
+  }
+
+  footer ul li a {
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+  }
+
+  footer .footer_logo {
+    width: 92px;
+  }
+
+  footer .social a {
     margin-right: 20px;
+    display: flex;
+  }
+
+  footer .social:first-child img {
+    width: 15px;
   }
 
   footer .social img {
-    width: 30px;
-  }
-  footer .social:first-child img {
-    /* width: 20px; */
+    width: 20px;
+    order: 3;
   }
 
-  footer ul li {
-    list-style: none;
-    margin: 20px 0;
-  }
-  footer ul li a {
-    font-size: 25px;
-    color: white;
-    font-weight: 600;
+  footer .social .label {
+    width: 100px;
   }
   footer .divider {
-    border-top: solid white 3px;
+    box-sizing: border-box;
+    height: 2px;
+    width: 93%;
+    border: 1px solid #ffffff;
+    margin: 0 1px;
   }
+
   footer .copyright {
     width: 100%;
-    text-align: center;
-    font-size: 25px;
+    display: flex;
+    margin-bottom: 0px;
+  }
+  footer .copyright div {
+    text-align: left;
+    font-size: 16px;
     font-weight: 600;
     color: white;
-    margin: 10px 0 50px;
+    margin: 10px 50px 0px 0px;
+  }
+
+  footer ul {
+    border-right: 0px !important;
   }
 }
 
@@ -2511,7 +3022,7 @@ a.main_btn:hover {
     border: 1px solid #788081;
     margin: 0 auto;
   }
-  .list-4,
+  /* .list-4,
   .list-5,
   .list-6 {
     display: flex;
@@ -2557,7 +3068,7 @@ a.main_btn:hover {
   }
 
   .list-4 .item .title {
-    /* height: 40px; */
+    
     width: 308px;
     color: #0f84a9;
     font-family: Montserrat;
@@ -2570,7 +3081,7 @@ a.main_btn:hover {
   }
 
   .list-4 .item .desc {
-    /* height: 84px; */
+  
     width: 330px;
     color: #788081;
     font-family: Montserrat;
@@ -2582,7 +3093,7 @@ a.main_btn:hover {
   }
 
   .list-6 .item .title {
-    /* height: 40px; */
+ 
     width: 159px;
     margin: 8px auto 10px;
     color: #0f84a9;
@@ -2608,7 +3119,7 @@ a.main_btn:hover {
 
   .list-4 .copy,
   .list-6 .copy {
-    /* height: 50px; */
+  
     width: 42px;
     color: #fdca21;
     font-family: Georgia;
@@ -2623,7 +3134,7 @@ a.main_btn:hover {
   .list-6 .item-no-border {
     text-align: center;
     width: 410px;
-  }
+  } */
 
   .item-no-border .title {
     height: initial;
@@ -2694,15 +3205,14 @@ a.main_btn:hover {
   }
 
   .list-4 .item .title {
-    /* height: 40px; */
-    width: 308px;
+    width: 389px;
     color: #0f84a9;
     font-family: Montserrat;
-    font-size: 18.72px;
-    font-weight: 600;
-    letter-spacing: 0;
-    /* line-height: 40px; */
     text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 28px;
     margin: 8px auto 10px;
   }
 
@@ -2795,7 +3305,9 @@ a.main_btn:hover {
     position: relative;
     border-right: solid 2px #cecece;
   }
-
+  .list-5 .item:nth-child(even) .image {
+    border-right: solid 2px #cecece;
+  }
   .list-5 .item:last-child .image {
     border-right: 0px;
   }
@@ -2903,6 +3415,7 @@ a.main_btn:hover {
     letter-spacing: 0;
     margin: 0 auto;
     padding: 8px 0px 0px;
+    text-align: center;
   }
 
   footer .subscribe .emailForm {
@@ -3007,8 +3520,12 @@ a.main_btn:hover {
     margin: 0 1px;
   }
 
+  footer .logo_panel .title {
+    display: none;
+  }
   footer .right_logo {
     margin: 0 auto;
+    display: initial;
   }
 
   footer .right_logo p {
