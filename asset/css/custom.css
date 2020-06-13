@@ -2589,7 +2589,8 @@ footer .right_logo {
     line-height: 20px;
     text-align: center;
     width: 100%;
-    margin-bottom: 20px;
+    width: 575px;
+    margin: 0 auto 20px;
   }
 
   .section_contact_green {
@@ -2730,7 +2731,6 @@ footer .right_logo {
   }
 
   .test_item img {
-    /* width: 82px; */
     max-height: 100%;
     max-width: 100%;
     position: absolute;
@@ -2750,6 +2750,72 @@ footer .right_logo {
     letter-spacing: 0;
     line-height: 18px;
     text-align: center;
+  }
+
+  /* our story */
+  .manager_team.admin_desktop {
+    display: initial;
+  }
+  .manager_team.admin_mobile {
+    display: none !important;
+  }
+  .manager_team .item {
+    text-align: center;
+  }
+
+  .manager_team .item .image {
+    height: 146px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+  }
+
+  .manager_team .item .image img {
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .manager_team .item .title {
+    margin: 15px auto 20px;
+    color: #0f84a9;
+    font-family: Montserrat;
+    font-size: 13.28px;
+    font-weight: 600;
+    letter-spacing: 0;
+    text-align: center;
+  }
+
+  .connect_pannel {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 30px auto 50px;
+  }
+  a.btn_green {
+    box-sizing: border-box;
+    border: 1px solid #0f84a9;
+    border-radius: 10px;
+    background-color: #3ecccd;
+    color: #ffffff;
+    font-family: Montserrat;
+
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 19px;
+    padding: 9px 13px;
+  }
+  a.btn_green:hover {
+    text-decoration: none;
+    background-color: #fff;
+    color: #3ecccd;
   }
 }
 
@@ -3763,6 +3829,7 @@ footer .right_logo {
   }
 
   .sub_desc {
+    width: 1354px;
     color: #788081;
     font-family: Montserrat;
     font-size: 24px;
@@ -3770,8 +3837,8 @@ footer .right_logo {
     letter-spacing: 0;
     line-height: 34px;
     text-align: center;
-    width: 100%;
-    margin-bottom: 40px;
+    /* width: 100%; */
+    margin: 0 auto 40px;
   }
 
   .section_video .container img {
