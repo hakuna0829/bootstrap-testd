@@ -60,7 +60,7 @@
         </nav>
 
         <div class="header-text">
-            Frequently asked questions
+            Frequently asked <br>questions
         </div>
     </div>
     <div class="container">
@@ -70,9 +70,8 @@
         <div class="accordion" id="faq_accordion">
             <div class="card">
                 <div class="card-header" id="headingOne">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
-                            aria-expanded="true" aria-controls="collapseOne">
+                    <h2 class="mb-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true">
+                        <button class="btn btn-link" type="button" aria-controls="collapseOne">
                             What is TESTD?
                         </button>
                         <p class="circle minus"></p>
@@ -90,9 +89,8 @@
             </div>
             <div class="card">
                 <div class="card-header" id="headingTwo">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <h2 class="mb-0" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false">
+                        <button class="btn btn-link collapsed" type="button" aria-controls="collapseTwo">
                             How does TESTD work?
                         </button>
                         <p class="circle plus"></p>
@@ -112,9 +110,8 @@
             </div>
             <div class="card">
                 <div class="card-header" id="headingThree">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <h2 class="mb-0" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false">
+                        <button class="btn btn-link collapsed" type="button" aria-controls="collapseThree">
                             Is TESTD a test or an app?
                         </button>
                         <p class="circle plus"></p>
@@ -132,9 +129,8 @@
             </div>
             <div class="card">
                 <div class="card-header" id="heading4">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                            data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                    <h2 class="mb-0" data-toggle="collapse" data-target="#collapse4" aria-expanded="false">
+                        <button class="btn btn-link collapsed" type="button" aria-controls="collapse4">
                             Does TESTD work for self-testing at home?
 
                         </button>
@@ -152,9 +148,8 @@
             </div>
             <div class="card">
                 <div class="card-header" id="heading5">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                            data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                    <h2 class="mb-0" data-toggle="collapse" data-target="#collapse5" aria-expanded="false">
+                        <button class="btn btn-link collapsed" type="button" aria-controls="collapse5">
                             What makes TESTD unique?
                         </button>
                         <p class="circle plus"></p>
@@ -174,9 +169,8 @@
             </div>
             <div class="card">
                 <div class="card-header" id="heading6">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                            data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                    <h2 class="mb-0" data-toggle="collapse" data-target="#collapse6" aria-expanded="false">
+                        <button class="btn btn-link collapsed" type="button" aria-controls="collapse6">
                             How does TESTD work with an insurance provider?
                         </button>
                         <p class="circle plus"></p>
@@ -191,9 +185,8 @@
             </div>
             <div class="card">
                 <div class="card-header" id="heading7">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                            data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                    <h2 class="mb-0" data-toggle="collapse" data-target="#collapse7" aria-expanded="false">
+                        <button class="btn btn-link collapsed" type="button" aria-controls="collapse7">
                             Is TESTD HIPAA compliant?
 
                         </button>
@@ -217,16 +210,23 @@
 
     <footer>
         <div class="subscribe">
-            <div class="desc">Get the latest TESTD news to your inbox</div>
-            <div class="emailForm">
-                <input type="email" id="subscribe_email" placeholder="Enter your email address" />
-            </div>
-            <div class="btn_subscribe">
-                <a href="#" class="main_btn">SUBSCRIBE</a>
+            <div class="container">
+
+                <div class="desc">Get the latest TESTD news to your inbox</div>
+                <div class="emailForm">
+                    <input type="email" id="subscribe_email" placeholder="Enter your email address" />
+                </div>
+                <div class="btn_subscribe">
+                    <a href="#" class=" main_btn">SUBSCRIBE</a>
+                </div>
             </div>
         </div>
         <div class="container">
-            <img src="asset/image/Logo_footer.png" class="footer_logo" />
+            <div class="logo_panel">
+                <img src="asset/image/Logo_footer.png" class="footer_logo" />
+                <div class="title">Getting safely back to work</div>
+            </div>
+
             <div class="row">
                 <div class="col-md-9">
                     <div class="row content">
@@ -248,20 +248,23 @@
                             <ul>
                                 <li><a href="ourstory.html">Our story</a></li>
                                 <li><a href="connectus.html">Connect with us</a></li>
-                                <li><a href="#">FAQs</a></li>
+                                <li><a href="faq.html">FAQs</a></li>
                             </ul>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 social_panel">
                             <ul>
                                 <li class="social"><a href="#">
-                                        <div class="label">Facebook</div> <img src="asset/image/facebook_white.svg">
+                                        <img src="asset/image/facebook_white.svg">
+                                        <div class="label">Facebook</div>
                                     </a></li>
                                 <li class="social"><a href="#">
-                                        <div class="label">Linked In</div><img src="asset/image/linkedIn_white.svg">
+                                        <img src="asset/image/linkedIn_white.svg">
+                                        <div class="label">Linked In</div>
                                     </a></li>
                                 <li class="social">
                                     <a href="#">
-                                        <div class="label">Twitter</div> <img src="asset/image/twitter_white.svg">
+                                        <img src="asset/image/twitter_white.svg">
+                                        <div class="label">Twitter</div>
                                     </a>
                                 </li>
                             </ul>
@@ -308,8 +311,15 @@
     $(document).on('click', '.card-header', function (e) {
         var $this = $(this);
 
+        // $this.parents('.accordion').find('p.circle').removeClass('minus').addClass('plus');
+        // if (!$this.find('button').hasClass('collapsed')) {
+        //     $this.find('p.circle').removeClass('plus').addClass('minus');
+        // } else {
+        //     $this.find('p.circle').removeClass('minus').addClass('plus');
+        // }
+        // $this.find('p.circle').removeClass('minus').addClass('plus');
         $this.parents('.accordion').find('p.circle').removeClass('minus').addClass('plus');
-        if (!$this.find('button').hasClass('collapsed')) {
+        if (!$this.find('h2').hasClass('collapsed')) {
             $this.find('p.circle').removeClass('plus').addClass('minus');
         } else {
             $this.find('p.circle').removeClass('minus').addClass('plus');
