@@ -62,7 +62,7 @@
 }
 
 .text-light {
-  height: 18px;
+  /* height: 18px; */
   font-family: Montserrat;
   font-size: 12px;
   letter-spacing: 0;
@@ -87,6 +87,10 @@
 
 .align_clear {
   clear: both;
+}
+
+.no-border{
+  border:none !important;
 }
 
 a.main_btn {
@@ -151,6 +155,7 @@ footer .right_logo {
 @media (max-width: 576px) {
   .header {
     height: 86px;
+    margin-top:44px;
   }
   .header .header-text {
     display: none;
@@ -161,43 +166,135 @@ footer .right_logo {
     margin: 10px 0;
   }
 
+  .header-text-desktop{
+    color: #3ECCCD;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 18px;
+    text-align: center;
+    margin: 10px auto;
+    display:none;
+  }
+
+  .navbar{
+    position: absolute;
+    top:0px;
+    height:44px;
+    margin-left:0px;
+    width: 100%;;
+  }
+
+  .navbar .navbar-logo{
+    width:78px;
+    margin:0 auto;
+    display: block;
+  }
+
+  .navbar .navbar-logo img{
+    width: 100%;
+  }
+
+  .navbar .navbar-toggler div{
+    width: 30px;
+    height: 3px;
+    background-color: #3ECCCD;
+    margin: 4px 0;
+  }
   .header-text-mobile .title {
-    height: 20px;
-    width: 205px;
+    /* height: 20px; */
     color: #3ecccd;
     font-family: Montserrat;
-    font-size: 13.28px;
     font-weight: bold;
+    font-size: 17px;
+    font-weight: 600;
     letter-spacing: 0;
-    line-height: 8px;
+    line-height: 22px;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto 5px;
   }
 
   .header-text-mobile .description {
-    height: 22px;
-    width: 193px;
+    /* height: 22px; */
+    /* width: 193px; */
     color: #0f84a9;
     font-family: Montserrat;
-    font-size: 8px;
+    font-size: 14px;
     font-weight: 600;
     letter-spacing: 0;
-    line-height: 10px;
+    line-height: 18px;
     text-align: center;
     margin: 0 auto;
   }
+  .header-text-mobile  .button{
+    margin: 10px auto 30px;
+    text-align: center;
+  }
+
 
   .sub_header {
     /* height: 32px; */
     /* width: 375px; */
-    color: #0f84a9;
+    /* color: #3ECCCD;
     font-family: Montserrat;
-    font-size: 10.72px;
+    font-size: 16px;
     font-weight: 600;
     letter-spacing: 0;
-    line-height: 14px;
+    line-height: 18px;
+    text-align: center;
+    margin: 10px auto; */
+
+    width: calc(100% + 30px);
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 18px;
     text-align: center;
     margin: 10px auto;
+    margin-left: -15px;
+    padding: 10px;
+    background-color: #3ECCCD;
+
+  }
+
+  .sub_header1 {
+    width: calc(100% + 30px);
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 18px;
+    text-align: center;
+    margin: 10px auto;
+    margin-left: -15px;
+    padding: 10px;
+    background-color: #3ECCCD;
+  }
+
+  .sub_header1.mobile{
+    display: block;
+  }
+
+  .sub_header.desktop{
+    display: none;
+  }
+
+  .sub_header.mobile{
+    display: block;
+    color: #0F84A9;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 18px;
+    text-align: center;
+    background:#fff;
+    margin: 10px auto;
+    width: 100%;
   }
 
   .list-4 .owl-item {
@@ -209,8 +306,7 @@ footer .right_logo {
   }
   .list-4 .item {
     text-align: center;
-    /* width: 105px; */
-    width: 160px;
+    width: 200px;
     margin: 0 auto;
   }
   .list-6 {
@@ -246,7 +342,7 @@ footer .right_logo {
   .list-5 .item .image {
     text-align: center;
     width: 100%;
-    height: 70px;
+    height: 60px;
     position: relative;
     border-right: solid 2px #cecece;
   }
@@ -277,7 +373,7 @@ footer .right_logo {
     /* width: 240px; */
     color: #0f84a9;
     font-family: Montserrat;
-    font-size: 8px;
+    font-size: 10px;
     font-weight: 500;
     letter-spacing: 0;
     line-height: 10px;
@@ -294,7 +390,7 @@ footer .right_logo {
   .list-6 .item .image {
     text-align: center;
     width: 100%;
-    height: 30px;
+    height: 50px;
     position: relative;
   }
 
@@ -314,25 +410,23 @@ footer .right_logo {
   .list-4 .item .title {
     /* height: 30px; */
     /* width: 107px; */
-    width: 160px;
     color: #0f84a9;
     font-family: Montserrat;
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 600;
     letter-spacing: 0;
-    /* line-height: 40px; */
+    line-height: 19px;
     text-align: center;
     margin: 0 auto 5px;
   }
 
   .list-4 .item .desc {
     /* height: 45px; */
-    width: 100px;
     color: #788081;
     font-family: Montserrat;
-    font-size: 8px;
+    font-size: 13px;
     letter-spacing: 0;
-    line-height: 11px;
+    line-height: 16px;
     text-align: center;
     margin: 0 auto;
   }
@@ -379,7 +473,7 @@ footer .right_logo {
     margin: 8px auto 10px;
     color: #0f84a9;
     font-family: Montserrat;
-    font-size: 13.72px;
+    font-size: 18px;
     font-weight: 600;
     letter-spacing: 0;
     line-height: 28.8px;
@@ -387,12 +481,12 @@ footer .right_logo {
   }
 
   .list-6 .item .desc {
-    width: 105px;
+    width: 145px;
     color: #788081;
     font-family: Montserrat;
-    font-size: 10.28px;
+    font-size: 15px;
     letter-spacing: 0;
-    line-height: 15px;
+    line-height: 22px;
     text-align: center;
     margin: 0 auto;
   }
@@ -480,9 +574,9 @@ footer .right_logo {
   .sub_desc {
     color: #788081;
     font-family: Montserrat;
-    font-size: 9px;
+    font-size: 12px;
     letter-spacing: 0;
-    line-height: 15px;
+    line-height: 17px;
     text-align: center;
     width: 100%;
     margin-bottom: 20px;
@@ -494,13 +588,13 @@ footer .right_logo {
   }
 
   .sub_header2 {
-    width: 305px;
+    width: 280px;
     color: #0f84a9;
     font-family: Montserrat;
-    font-size: 9px;
+    font-size: 14px;
     font-weight: 500;
     letter-spacing: 0;
-    line-height: 11px;
+    line-height: 20px;
     text-align: center;
     margin: 10px auto 20px;
   }
@@ -522,11 +616,11 @@ footer .right_logo {
   }
 
   a.main_btn {
-    font-size: 10.72px;
+    font-size: 13px;
     font-weight: 600;
     letter-spacing: 0;
-    line-height: 13px;
-    padding: 5px 10px;
+    line-height: 15px;
+    padding: 5px 15px;
     background: #3ecccd;
     border: solid #0f84a9 1px;
   }
@@ -555,10 +649,10 @@ footer .right_logo {
   footer .subscribe .desc {
     color: #ffffff;
     font-family: Montserrat;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 600;
     letter-spacing: 0;
-    line-height: 16px;
+    line-height: 19px;
     text-align: center;
     padding: 8px 0px 0px;
   }
@@ -580,7 +674,7 @@ footer .right_logo {
     width: 210px;
     color: #000000;
     font-family: Montserrat;
-    font-size: 11px;
+    font-size: 15px;
     font-weight: 500;
     letter-spacing: 0;
     line-height: 14px;
@@ -657,7 +751,7 @@ footer .right_logo {
     width: 100px;
     color: #ffffff;
     font-family: Montserrat;
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 600;
     letter-spacing: 0;
     line-height: 22px;
@@ -711,7 +805,7 @@ footer .right_logo {
   footer .copyright div {
     color: #ffffff;
     font-family: Montserrat;
-    font-size: 8px;
+    font-size: 9px;
     font-weight: 600;
     letter-spacing: 0;
     line-height: 15px;
@@ -774,6 +868,10 @@ footer .right_logo {
   }
 
   .mobile {
+    display: block;
+  }
+
+  .desktop {
     display: none;
   }
 
@@ -802,8 +900,8 @@ footer .right_logo {
   .navbar-toggler:not(:disabled):not(.disabled) {
     cursor: pointer;
     position: absolute;
-    top: 0px;
-    left: -15px;
+    top: 7px;
+    left: 0px;
     background: transparent !important;
     border: none;
   }
@@ -848,7 +946,11 @@ footer .right_logo {
     background: #01797d;
   }
 
+  .navbar-brand{
+    margin: 0px;
+  }
   .navbar-brand img {
+    height: auto;
     width: 60px;
     margin-top: -15px;
     display: none;
@@ -1068,29 +1170,75 @@ footer .right_logo {
 
   .header2 {
     height: 86px;
+    margin-top:44px;
   }
-
+  
   .header2 .header-text {
-    margin: 22px auto 0px;
+    margin: 0px auto 0px;
     text-align: center;
     color: #043b5d;
     font-family: Montserrat;
-    font-size: 10.72px;
+    font-size: 15px;
     font-weight: 600;
     letter-spacing: 0;
-    line-height: 13px;
+    line-height: 17px;
+    position: relative;
+    top: 23px;
   }
 
   .sub_header_left {
-    color: #0f84a9;
+    background: #3ECCCD;
     font-family: Montserrat;
-    font-size: 13.72px;
+    font-size: 16px;
     font-weight: 600;
     letter-spacing: 0;
-    line-height: 40px;
-    margin: 0 auto;
+    line-height: 18px;
+    margin: 20px auto;
     text-align: center;
+    margin-left: -15px;
+    width: calc(100% + 30px );
+    padding: 10px;
+    color: #fff;
+    /* color: #0f84a9;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 18px;
+    margin: 20px auto;
+    text-align: center; */
   }
+
+  .outer {
+    /* background-color: pink; */
+  
+    width: 120px;
+    position: absolute;
+    display: inline-block;
+    margin: 0 15px;
+    top: 47% ;
+    right: -82px;
+    display: none;
+  }
+  
+  .inner {
+    font-size: 13px;
+    color: white;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    line-height: 28px;
+    width: 100%;
+  }
+
+  .rotate {
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  transform:  translateX(-50%) translateY(-50%) rotate(-90deg);
+}
 
   .num_card {
     width: calc(100% - 10px);
@@ -1108,7 +1256,7 @@ footer .right_logo {
   .num_card p {
     color: #0f84a9;
     font-family: Montserrat;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 600;
     letter-spacing: 0;
     line-height: 28px;
@@ -1120,9 +1268,9 @@ footer .right_logo {
     transform: rotate(360deg);
     color: #0f84a9;
     font-family: Montserrat;
-    font-size: 8px;
+    font-size: 12px;
     letter-spacing: 0;
-    line-height: 10px;
+    line-height: 17px;
   }
 
   .num_card .num_pad {
@@ -1137,6 +1285,7 @@ footer .right_logo {
   }
   .num_card .num_pad:hover {
     background-color: #fdca21;
+    color:#fff;
   }
   .num_card .num_pad p {
     font-family: Univers;
@@ -1163,37 +1312,41 @@ footer .right_logo {
   .section_contact_green {
     height: 100px;
     width: 100%;
-    background-color: #3ecccd;
+    display: inline;
+    border: 1px #fff solid;
   }
 
   .section_contact_green .row {
-    height: 84px;
+    /* height: 84px; */
     display: inline-flex;
     align-items: center;
   }
 
   .section_contact_green .title {
     color: #ffffff;
+    background-color: #3ecccd;
     font-family: Montserrat;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 600;
     letter-spacing: 0;
     line-height: 14px;
     text-align: center;
-    margin: 0 auto;
+    margin: 8px auto;
+    padding: 10px;
   }
 
   .section_contact_green .contact_email {
     text-align: center;
     box-sizing: border-box;
-    height: 22px;
-    width: 158px;
+    height: 26px;
+    width: 188px;
     border: 1px solid #3ecccd;
     border-radius: 5px;
     background-color: #ffffff;
-    margin: 0 auto;
-    display: inline-table;
+    margin: 0 auto 10px;
+    display: table;
     padding: 0px 0 5px;
+
   }
 
   .section_contact_green .contact_email input {
@@ -1206,29 +1359,45 @@ footer .right_logo {
     box-sizing: border-box;
 
     font-family: Montserrat;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 500;
     letter-spacing: 0;
-    line-height: 13px;
+    line-height: 15px;
     text-align: center;
   }
 
   .section_contact_green .contact_button {
     text-align: center;
   }
-
   a.main_btn_2 {
     box-sizing: border-box;
+    height: 26px;
+    width: 130px;
+    border: 1px solid #0f84a9;
+    border-radius: 10px;
+    background-color: #3ecccd;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 10.28px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 13px;
+    padding: 5px 10px;
+  }
+  a.main_btn_2:hover {
+    text-decoration: none;
+    background-color: #fff;
+    color: #3ecccd;
+  }
+
+  /* a.main_btn_2 {
+    box-sizing: border-box;
     height: 13px;
-    /* width: 161px;  */
     border: 1px solid #0f84a9;
     border-radius: 8px;
     background-color: #ffffff;
     padding: 8px 11px;
-    /* height: 22px;
-      width: 121px; */
     color: #0f84a9;
-    /* color: #ffffff; */
     font-family: Montserrat;
     font-size: 10.28px;
     font-weight: 600;
@@ -1239,23 +1408,16 @@ footer .right_logo {
 
   a.main_btn_2:hover {
     box-sizing: border-box;
-    height: 41px;
-    width: 161px;
     border: 1px solid #ffffff;
     border-radius: 8px;
     background-color: #3ecccd;
-    padding: 8px 15px;
+    padding: 8px 11px;
     color: #0f84a9;
-    font-family: Montserrat;
-    font-size: 18px;
+    font-family: Montserrat;    
     font-weight: 600;
     letter-spacing: 0;
-    line-height: 22px;
-    text-align: right;
-    text-decoration: none;
-    /* border-color: white;
-      background: transparent; */
-  }
+    text-decoration: none;    
+  } */
 
   .test_item {
     position: relative;
@@ -1326,10 +1488,10 @@ footer .right_logo {
     margin: 10px auto 15px;
     color: #0f84a9;
     font-family: Montserrat;
-    font-size: 10.72px;
+    font-size: 13px;
     font-weight: 500;
     letter-spacing: 0;
-    line-height: 13.5px;
+    line-height: 18px;
     margin: 15px auto;
     text-align: center;
   }
@@ -1704,17 +1866,18 @@ footer .right_logo {
 
   #faq_accordion .card .card-header {
     border: 0px;
-    padding: 5px 1.25rem;
+    padding: 5px 0.25rem;
   }
 
   #faq_accordion .card-header .btn-link {
     color: #0f84a9;
     font-family: Montserrat;
-    font-size: 8.4px;
+    font-size: 11px;
     font-weight: 600;
     letter-spacing: 0;
     line-height: 25.2px;
     text-decoration: none;
+    padding:5px 0px;
   }
   #faq_accordion .card-header h2 {
     display: flex;
@@ -1774,7 +1937,7 @@ footer .right_logo {
   #faq_accordion .card-body {
     color: #0f84a9;
     font-family: Montserrat;
-    font-size: 8px;
+    font-size: 11px;
     letter-spacing: 0;
     line-height: 12px;
     padding: 5px 1.25rem 10px;
@@ -1783,6 +1946,8 @@ footer .right_logo {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+
+  
   .header {
     height: 110px;
   }
@@ -1803,6 +1968,10 @@ footer .right_logo {
   .navbar-toggler:hover,
   .navbar-toggler:active {
     border: none;
+  }
+  .navbar .navbar-logo{
+   
+    display: none;
   }
   /* .navbar-nav .nav-item {
     border-bottom: solid white 1px;
@@ -1838,6 +2007,7 @@ footer .right_logo {
   }
 
   .navbar-brand img {
+    height: auto;
     width: 60px;
     margin-top: -15px;
     display: none;
@@ -2057,6 +2227,10 @@ footer .right_logo {
 
   .header2 {
     height: 86px;
+  }
+
+  .outer{
+    display: none;
   }
 
   .header2 .header-text {
@@ -3107,15 +3281,27 @@ footer .right_logo {
     margin: 0 auto;
   }
 
-  .sub_header {
+  .header-text-desktop{
+     font-size: 10.72px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 14px;
+    text-align: center;
+    margin: 10px auto;
     color: #0f84a9;
     font-family: Montserrat;
+    display:block;
+  }
+  .sub_header {
+    
     font-size: 10.72px;
     font-weight: 600;
     letter-spacing: 0;
     line-height: 14px;
     text-align: center;
     margin: 10px auto;
+    color: #0f84a9;
+    font-family: Montserrat;
   }
 
   .list-4 .owl-item {
@@ -3448,6 +3634,16 @@ footer .right_logo {
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+  
+
   .header {
     height: 178px;
   }
@@ -3476,6 +3672,18 @@ footer .right_logo {
   .navbar-nav .nav-item {
     border-right: 1px solid #043b5d;
     height: 9px;
+  }
+
+  .sub_header1.mobile{
+    display: none;
+  }
+
+  .sub_header.mobile{
+    display: none;
+  }
+
+  .sub_header.desktop{
+    display: block;
   }
   /* .navbar-nav {
     position: absolute;
@@ -3506,7 +3714,7 @@ footer .right_logo {
     line-height: 15px;
   }
   .navbar-brand img {
-    height: 10px;
+    height: auto;
     width: 30px;
     display: initial;
   }
@@ -3546,6 +3754,18 @@ footer .right_logo {
     letter-spacing: 0;
   }
 
+  .header-text-desktop{
+    width: 100%;
+    color: #0f84a9;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 20px;
+    text-align: center;
+    margin: 20px auto;
+  }
+  
   .sub_header {
     width: 100%;
     color: #0f84a9;
@@ -4185,12 +4405,11 @@ footer .right_logo {
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 0;
-    line-height: 40px;
+    line-height: 20px;
     text-align: center;
-
     position: absolute;
     left: 21%;
-    top: 70px;
+    top: 60px;
   }
 
   .list-6.desktop {
@@ -4362,7 +4581,7 @@ footer .right_logo {
     position: absolute;
     bottom: 0px;
     left: -20px;
-    padding: 0px 13px;
+    padding: 6px 12px;
     border-radius: 50%;
     background: #fdca21;
     font-family: "Monserrat";
@@ -4842,6 +5061,11 @@ footer .right_logo {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .header2 .header-text{
+    left: 26%;
+    top: 65px;
+  }
+  
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -4862,10 +5086,10 @@ footer .right_logo {
     font-size: 24px;
     font-weight: 600;
     letter-spacing: 0;
-    line-height: 40px;
+    line-height: 28px;
     text-align: center;
     position: absolute;
-    left: 31%;
+    left: 34%;
     top: 150px;
   }
 
@@ -4965,7 +5189,7 @@ footer .right_logo {
     padding-top: 5px;
   }
   .navbar-brand img {
-    height: 23px;
+    height: auto;
     width: 71px;
   }
 
@@ -5035,6 +5259,17 @@ footer .right_logo {
     padding: 0px auto;
   }
 
+  .header-text-desktop{
+    color: #0f84a9;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 40px;
+    text-align: center;
+    margin: 15px auto;
+  }
+  
   .sub_header {
     /* height: 108px; */
     /* width: 1388px; */
@@ -6532,7 +6767,7 @@ footer .right_logo {
     padding-top: 5px;
   }
   .navbar-brand img {
-    height: 29px;
+    height: auto;
     width: 90px;
   }
 
@@ -6602,6 +6837,18 @@ footer .right_logo {
     max-width: 1660px;
   }
 
+  .header-text-desktop{
+     width: 1388px;
+    color: #0f84a9;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 40px;
+    text-align: center;
+    margin: 35px auto;
+  }
+  
   .sub_header {
     /* height: 108px; */
     width: 1388px;
