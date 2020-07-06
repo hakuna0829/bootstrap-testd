@@ -644,19 +644,15 @@ footer .right_logo {
   }
 
   a.main_btn {
-    
-    
-    border: solid #0f84a9 1px;
-    text-decoration: none;
-    border-radius:5px;
-    background-color: #fff;
-    color: #3ECCCD;
-    font-family: Montserrat;
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 0;
-    line-height: 13px;
-    text-align: center;
+    line-height: 15px;
+    padding: 4px 10px;
+    background: #3ecccd;
+    border: solid #0f84a9 1px;
+    text-decoration: none;
+    border-radius:5px;
   }
 
   a.main_btn:hover {
@@ -664,11 +660,8 @@ footer .right_logo {
     font-weight: 600;
     letter-spacing: 0;
     line-height: 15px;
-    
-    background: #3ecccd;
-    border: solid #0f84a9 1px;
+    padding: 4px 10px;
     text-decoration: none;
-    border-radius:5px;
   }
 
   /* footer .content {
