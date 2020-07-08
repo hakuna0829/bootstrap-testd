@@ -115,6 +115,12 @@
     </div>
   </div>
   <div class="container">
+    <!-- Back to top button -->
+    <a id="back2top">
+      <div class="triangle"></div>
+      <div class='label'>Back to top</div>
+    </a>
+
     <div class="header-text-mobile">
       <p class="title">Getting safely back to work</p>
       <p class="description">
@@ -357,13 +363,61 @@
     <p class="sub_header">
       TESTD™ is an ideal tool for the distributed workforce
     </p>
-    <div class="list-5">
+    <!-- mobile version -->
+    <div class="mobile_workforce">
+      <div class="list-5">
+        <div class="item">
+          <div class="image">
+            <img src="asset/image/Healthcare_insurance_icon.png">
+          </div>
+          <p class="title">
+            Insurance<br class="">
+            Companies</p>
+        </div>
+        <div class="item">
+          <div class="image">
+            <img src="asset/image/ride_share_icon.png">
+          </div>
+          <p class="title">
+            Rideshare<br class="">
+            Companies</p>
+        </div>
+      </div>
+      <div class="center_item">
+        <div class="image">
+          <img class="deliver" src="asset/image/scooter_icon_left.png">
+        </div>
+        <p class="title">
+          Delivery<br class="">
+          Services</p>
+      </div>
+      <div class="list-5">
+        <div class="item">
+          <div class="image">
+            <img src="asset/image/staffing_icon.png">
+          </div>
+          <p class="title">
+            Staffing<br class="">
+            Companies</p>
+        </div>
+        <div class="item">
+          <div class="image">
+            <img src="asset/image/dating_icon.svg">
+          </div>
+          <p class="title">
+            Online<br class="">
+            Dating Services</p>
+        </div>
+      </div>
+    </div>
+    <!-- desktop version -->
+    <div class="list-5 desktop">
       <div class="item">
         <div class="image">
           <img src="asset/image/Healthcare_insurance_icon.png">
         </div>
         <p class="title">
-          Insurance<br class="desktop">
+          Insurance<br class="">
           Companies</p>
       </div>
       <div class="item">
@@ -371,15 +425,15 @@
           <img src="asset/image/ride_share_icon.png">
         </div>
         <p class="title">
-          Rideshare<br class="desktop">
+          Rideshare<br class="">
           Companies</p>
       </div>
       <div class="item">
         <div class="image">
-          <img src="asset/image/scooter_icon_left.png">
+          <img class="deliver" src="asset/image/scooter_icon_left.png">
         </div>
         <p class="title">
-          Delivery<br class="desktop">
+          Delivery<br class="">
           Services</p>
       </div>
       <div class="item">
@@ -387,7 +441,7 @@
           <img src="asset/image/staffing_icon.png">
         </div>
         <p class="title">
-          Staffing<br class="desktop">
+          Staffing<br class="">
           Companies</p>
       </div>
       <div class="item">
@@ -395,7 +449,7 @@
           <img src="asset/image/dating_icon.svg">
         </div>
         <p class="title">
-          Online<br class="desktop">
+          Online<br class="">
           Dating Services</p>
       </div>
     </div>
@@ -498,6 +552,28 @@
       </div>
     </div>
   </footer>
+  <div class="cookie-consent-banner" id="CookieBanner">
+    <div class="container">
+      <div class="cookie-consent-banner__inner">
+        <div class="cookie-consent-banner__copy">
+
+          <div class="cookie-consent-banner__description">
+            This website uses cookies to ensure you get <br />
+            the best experience on our website. <a href="howitworks.html">LEARN MORE</a> </div>
+        </div>
+
+        <div class="cookie-consent-banner__actions">
+
+          <a href="#" class="cookie-consent-banner__cta cookie-consent-banner__cta--secondary" id="btn_decline">
+            Decline
+          </a>
+          <a href="#" class="cookie-consent-banner__cta" id="btn_accept">
+            Accept
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 <!-- Modal -->
@@ -564,6 +640,7 @@
 <script src='https://www.google.com/recaptcha/api.js'></script>
 <!-- owl carousel script -->
 <script src="asset/libs/owlcarousel/owl.carousel.min.js"></script>
+<script src="asset/js/custom.js"> </script>
 <script type="text/javascript">
   var onloadCallback = function () {
     alert("grecaptcha is ready!");
