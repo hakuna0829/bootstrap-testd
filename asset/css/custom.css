@@ -47,6 +47,10 @@
   color: #01797d ;
 }
 
+*:focus {
+  outline: none;
+}
+
 .navbar {
   margin-left: 6%;
   /* padding-top: 0px; */
@@ -802,18 +806,16 @@ footer .right_logo {
   }
 
   a.main_btn {
-    
-    
     border: solid #0f84a9 1px;
     text-decoration: none;
     border-radius:5px;
     background-color: #fff;
     color: #3ECCCD;
     font-family: Montserrat;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
     letter-spacing: 0;
-    line-height: 13px;
+    line-height: 14px;
     text-align: center;
   }
 
@@ -870,10 +872,10 @@ footer .right_logo {
     width: 210px;
     color: #000000;
     font-family: 'Montserrat';
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 500;
     letter-spacing: 0;
-    line-height: 15px !important;
+    line-height: 13px !important;
     text-align: center;
     border: none;
   }
@@ -1486,9 +1488,17 @@ footer .right_logo {
 
   .card_footer{
     margin-left: 10px;
+    
+  }
+
+  .card_footer a{
     color: #0f84a9;
     font-weight: 600;
     text-transform: uppercase;
+  }
+
+  .card_footer a:hover{
+    text-decoration:none;
   }
 
   .num_card p {
@@ -1612,15 +1622,15 @@ footer .right_logo {
     height: 26px;
     width: 130px;
     border: 1px solid #0f84a9;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: #3ecccd;
     color: #ffffff;
     font-family: 'Montserrat';
-    font-size: 10.28px;
+    font-size: 12px;
     font-weight: 600;
     letter-spacing: 0;
     line-height: 13px;
-    padding: 5px 10px;
+    padding: 8px 15px;
     text-decoration: none;
   }
   a.main_btn_2:hover {
@@ -4741,11 +4751,19 @@ footer .right_logo {
     margin-bottom: 0px;
   }
 
-  .card_footer{
+   .card_footer{
+    margin-bottom:40px;    
+  }
+
+  .card_footer a{
     color: #0f84a9;
     font-weight: 600;
-    margin-bottom:40px;
+   
     text-transform: uppercase;
+  }
+
+  .card_footer a:hover{
+    text-decoration:none;
   }
 
   .num_card.right_ {
@@ -6302,13 +6320,19 @@ footer .right_logo {
     margin-left: 45px;
   }
   
-  .card_footer {
-    color: #0f84a9;
-    font-weight: 600;
-    margin-bottom: 40px;
+  .card_footer{
     margin-left: 45px;
-    margin-bottom: 40px;
+    margin-bottom: 40px; 
+  }
+
+  .card_footer a{
+    color: #0f84a9;
+    font-weight: 600;  
     text-transform: uppercase;
+  }
+
+  .card_footer a:hover{
+    text-decoration:none;
   }
 
   .num_card {
@@ -6321,10 +6345,17 @@ footer .right_logo {
   }
 
   .card_footer{
-    color: #0f84a9;
-    font-weight: 600;
     margin-bottom:40px;
+  }
+
+  .card_footer a{
+    color: #0f84a9;
+    font-weight: 600;   
     text-transform: uppercase;
+  }
+
+  .card_footer a:hover{
+    text-decoration:none;
   }
 
   .num_card p {
@@ -8012,16 +8043,23 @@ footer .right_logo {
     width: 100%;
   }
 
-  .card_footer {
+  .card_footer{
+    margin-left:45px;
+    margin-bottom: 50px;
+  }
+
+  .card_footer a{
     color: #0f84a9;
     font-family: 'Montserrat';
     font-size: 24px;
     font-weight: 600;
     letter-spacing: 0;
-    line-height: 40px;
-    margin-left:45px;
-    margin-bottom: 50px;
+    line-height: 40px;   
     text-transform: uppercase;
+  }
+
+  .card_footer a:hover{
+    text-decoration:none;
   }
   
   .list-6.desktop {
