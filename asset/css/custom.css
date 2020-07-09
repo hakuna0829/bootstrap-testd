@@ -1511,8 +1511,10 @@ footer .right_logo {
     margin: 5px 0 0px 20px;
   }
 
+  .num_card > p { display: none;;}
+
   .num_card .desc {
-    margin: 0px 20px 10px;
+    margin: 20px 20px 10px;
     transform: rotate(360deg);
     color: #0f84a9;
     font-family: 'Montserrat';
@@ -1827,18 +1829,18 @@ footer .right_logo {
   }
   a.btn_green {
     box-sizing: border-box;
-    height: 26px;
-    width: 130px;
+    /* height: 26px; */
+    /* width: 130px; */
     border: 1px solid #0f84a9;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: #3ecccd;
     color: #ffffff;
     font-family: 'Montserrat';
-    font-size: 10.28px;
+    font-size: 12px;
     font-weight: 600;
     letter-spacing: 0;
     line-height: 13px;
-    padding: 5px 10px;
+    padding: 10px 15px;
   }
   a.btn_green:hover {
     text-decoration: none;
